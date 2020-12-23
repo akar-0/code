@@ -1,4 +1,6 @@
 from itertools import circle
+from gmpy2 import is_prime
+from collections import Counter
 
 def factors(n):
     if is_prime(n):return {n:1}
@@ -15,4 +17,4 @@ def factors(n):
     while n != 1:
         while not n%p: L.append(p); n //=p
         else: p += next(i)
-    else: return {k:L.count(k) for k in set(L)}
+    else: return Counter(L)
