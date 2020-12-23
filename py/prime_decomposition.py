@@ -1,4 +1,4 @@
-from itertools import circle
+from itertools import cycle
 from gmpy2 import is_prime
 from collections import Counter
 
