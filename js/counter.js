@@ -1,3 +1,4 @@
+//dict object
 function counter(e){
  C = {}
   for (i of e){
@@ -7,4 +8,9 @@ function counter(e){
     else {C[i]++}
   }
   return C
+}
+
+//on the fly
+function counter(val, arr){
+  return arr.filter(e => e == val).length;
 }
