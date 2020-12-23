@@ -11,6 +11,4 @@ function counter(e){
 }
 
 //on the fly
-function counter(val, arr){
-  return arr.filter(e => e == val).length;
-}
+counter(val, arr){return arr.filter(e => e == val).length}
