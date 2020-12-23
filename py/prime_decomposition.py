@@ -5,10 +5,7 @@ from collections import Counter
 def factors(n):
     if is_prime(n):return {n:1}
     L=[]
-    while not n%2:
-        L.append(2)
-        n = n>>1
-    for p in (3,5):
+    for p in (2,3,5):
         while not n%p:
             L.append(p)
             n //=p
