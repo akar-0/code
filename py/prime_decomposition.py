@@ -13,6 +13,6 @@ def factors(n):
     else: p += 2
     i=iter(cycle((4, 2, 4, 2, 4, 6, 2, 6)))
     while n != 1:
-        while not n%p:
-            L.append(p)
-            n //=p
+        while not n%p: L.append(p); n //=p
+        else: p += next(i)
+    else: return {k:L.count(k) for k in set(L)}
