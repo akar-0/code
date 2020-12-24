@@ -1,3 +1,3 @@
-[...Array(n+1).keys()].map(i => i)
+[...Array(size).keys()].map(i=>i+start)
 
-[...Array(n+1).keys()]
+[...Array(size).keys()]
