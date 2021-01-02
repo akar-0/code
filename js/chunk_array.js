@@ -1,3 +1,4 @@
+//see also https://www.codewars.com/kata/5298961d9ce954d77b0003a6/solutions/javascript
 function chunk(arr, step){
   var tmp=arr.slice()
   var res=[]
