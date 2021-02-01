@@ -1,0 +1,5 @@
+#include <vector>
+
+  std::vector<int> tmp=std::vector<int>(arr.begin(), arr.begin()+i);
+  std::vector<int> tmp2=std::vector<int>(arr.begin()+i+1, arr.end());
+  tmp.insert(tmp.end(),tmp2.begin(),tmp2.end());
