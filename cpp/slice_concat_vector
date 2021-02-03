@@ -1,3 +1,4 @@
+//See https://www.codewars.com/kata/5a905c2157c562994900009d/solutions/cpp
 #include <vector>
 
   std::vector<int> tmp=std::vector<int>(arr.begin(), arr.begin()+i);
