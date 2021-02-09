@@ -2,7 +2,7 @@
 function primeFactors(n){
   var m=n
   var arr=[]
-  for (p of [2,3,5]){
+  for (const p of [2,3,5]){
     if (!(m%p)){
         var e=1
         m /=p
@@ -34,7 +34,7 @@ function primeFactors(n){
 function primeFactors(n){
   var m=n
   var arr=[]
-  for (p of [2,3,5]){ 
+  for (const p of [2,3,5]){ 
         while (!(m%p)){
           m /= p
           arr.push(p)
