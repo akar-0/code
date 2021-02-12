@@ -18,7 +18,7 @@ function groupBy(L){
   var i=0
   while (i<L.length){
     const n=L[i]
-    var c=0
+    var c=1
     while (L[i+1]===n){
       i++
       c++
