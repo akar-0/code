@@ -1,3 +1,4 @@
+//https://www.codewars.com/kata/58693136b98de0e4910001ab/solutions/c
 //https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/solutions/c
 #include <stdlib.h>
 #include <stdbool.h>
