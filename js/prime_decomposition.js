@@ -1,10 +1,9 @@
 
 function primeFactors(n){
-  var m=n
-  var arr=[]
+  let m=n, arr=[]
   for (const p of [2,3,5]){
     if (!(m%p)){
-        var e=1
+        let e=1
         m /=p
         while (!(m%p)){
           e++
@@ -13,7 +12,7 @@ function primeFactors(n){
         arr.push([p, e])
         }
   }
-  var p=7, i=0
+  let p=7, i=0
   const c=[4, 2, 4, 2, 4, 6, 2, 6]
   while (m != 1 || p*p<n){
     if (!(m%p)){
