@@ -1,6 +1,6 @@
 //dict object
 function counter(e){
- var C = {}
+ let C = {}
   for (const i of e){
     if (!C[i]){
       C[i] = 1
