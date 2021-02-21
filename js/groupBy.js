@@ -12,10 +12,24 @@ function groupBy(L){
   }
  return res
 }
+function groupBy(L){
+  const res=[]
+  let i=0
+  while (i<L.length){
+    const n=L[i], tmp=[n]
+    while (L[i+1]===n){
+      i++
+      tmp.push(n)
+    }
+    res.push([n,tmp.join('')])
+    i++
+  }
+ return res
+}
 
 function groupBy(L){
   const res=[]
-  var i=0
+  let i=0
   while (i<L.length){
     const n=L[i]
     var c=1
