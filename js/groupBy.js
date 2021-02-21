@@ -1,6 +1,6 @@
 function groupBy(L){
   const res=[]
-  var i=0
+  let i=0
   while (i<L.length){
     const n=L[i], tmp=[n,[n]]
     while (L[i+1]===n){
