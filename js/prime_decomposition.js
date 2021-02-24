@@ -65,3 +65,10 @@ function isPrime(n){
   }
  return true
 }
+function nextPrime(n){
+  if (n == 0 || n == 1){return 2}
+  if (!(n%2)){n += 1}
+  else {n+=2}
+  while (true){
+    if (isPrime(n)){return n}
+    else {n += 2}}}
