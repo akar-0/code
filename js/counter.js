@@ -1,3 +1,4 @@
+// See also https://www.codewars.com/kata/reviews/57cb12de35ef62f92d000141/groups/57cb21fd58da9ee0d7000071
 //dict object
 function counter(e){
  let C = {}
