@@ -1,5 +1,8 @@
+using namespace std;
+
 std::vector<int> prime_factors(long n){
-  std::vector< int > arr;
+  if (isPrime(n)) //A FINIR
+  vector< int > arr;
   int p=3;
   if (n<2){
     return arr;
@@ -21,4 +24,18 @@ std::vector<int> prime_factors(long n){
   }
   if (n != 1){arr.push_back(n);}
   return arr;
+}
+bool isPrime(int n){
+  if (n<2){return false;}
+  if (n==2||n==3||n==5||n==7){return true;}
+  if (!(n%2)||!(n%3)||!(n%5)||!(n%7)){return false;}
+  vector<int> c={4, 2, 4, 2, 4, 6, 2, 6};
+  int p=7, i=0;
+  while (p*p<=n)
+    {
+    if (!(n%p)){return false;}
+    p+=c[i];
+    i=(i+1)%8;
+  }
+ return true;
 }
