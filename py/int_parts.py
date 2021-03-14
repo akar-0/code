@@ -1,3 +1,4 @@
+#https://www.codewars.com/kata/5776600afc8cd670130000df/solutions/javascript
 #https://www.codewars.com/kata/5716a4c2794d305f4900156b/solutions/python
 #https://www.codewars.com/kata/553291f451ab4fbcdc0001c6/solutions/python
 def part(n):
