@@ -1,6 +1,6 @@
 #https://www.codewars.com/kata/5716a4c2794d305f4900156b/solutions/python
 #https://www.codewars.com/kata/553291f451ab4fbcdc0001c6/solutions/python
-def find_part_max_prod(n):
+def part(n):
     a,b,c,s=[0]*(n+1),1,n-1,set()
     while b:
         h=a[b-1]+1
