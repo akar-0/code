@@ -14,3 +14,14 @@ bool is_prime(int n)
   }
  return true;
 }
+
+
+int nextPrime(int n){
+  if (n<2) {return 2;}
+  if (n%2==0){n++;}
+  else {n+=2;}
+  while (1){
+    if (is_prime(n)) {return n;}
+    n+=2;
+  }
+}
