@@ -24,3 +24,15 @@ fn isPrime(x: u64) -> bool {
     }
     return true;
 }
+
+fn nextPrime(m: u32) -> u32 {
+    let mut n=m;
+  if n == 0 || n == 1 {return 2_u32;}
+  if n%2==0 {n += 1;}
+  else {n+=2;}
+  while n>0 {
+    if isPrime(n) {return n;}
+    else {n += 2;}
+    }
+  return 1_u32
+}
