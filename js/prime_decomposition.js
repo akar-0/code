@@ -111,3 +111,16 @@ class Primes {
     }
   }
 }
+
+
+function isPrime(n){
+  if (n<2){return false}
+  const i = Primes.stream(), s=n**.5
+  let p=i.next().value
+  while (p<=s){
+    if (!(n%p)) return false
+    p=i.next().value
+  }
+ return true
+}
+
