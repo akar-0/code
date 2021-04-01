@@ -2,9 +2,7 @@
 //dict object
 function counter(e){
   const C = {}
-  for (const i of e){
-   C[i]=(C[i]||0)+1
-   }
+  for (const i of e) C[i]=(C[i]||0)+1
   return C
 }
 
