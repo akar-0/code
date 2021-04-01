@@ -32,7 +32,7 @@ function groupBy(L){
   let i=0
   while (i<L.length){
     const n=L[i]
-    var c=1
+    let c=1
     while (L[i+1]===n){
       i++
       c++
