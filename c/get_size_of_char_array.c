@@ -1,6 +1,5 @@
-int getSize (char * s) {
-    char * t;    
-    for (t = s; *t != '\0'; t++)
-        ;
-    return t - s;
+int len (char* s) {
+    int i=0;
+    while (s[i]!='\0') i++;
+    return i;
 }
