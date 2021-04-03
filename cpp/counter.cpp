@@ -2,3 +2,9 @@
 unsigned c[size] = {};
   for (auto d : iterable)
     c[d]++;
+
+//https://www.codewars.com/kata/554ca54ffa7d91b236000023/solutions/cpp
+
+#include <unordered_map>
+  std::unordered_map<int, unsigned> count;
+  for (int k: arr) count[k]++;
