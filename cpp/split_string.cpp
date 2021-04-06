@@ -1,3 +1,4 @@
+//See also https://www.codewars.com/kata/554b4ac871d6813a03000035/solutions https://stackoverflow.com/questions/20755140/split-string-by-a-character
 //https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c
 std::vector<std::string> split(const std::string& str, const std::string& delim)
 {
