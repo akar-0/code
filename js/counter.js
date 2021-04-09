@@ -5,7 +5,7 @@ function counter(e){
   for (const i of e) C[i]=(C[i]||0)+1
   return C
 }
-
+const counter = require('lodash').countBy;
 //on the fly
 counter(n,arr){return arr.filter(e=>e==n).length}
 
