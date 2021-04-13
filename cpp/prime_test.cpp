@@ -1,3 +1,5 @@
+#include <cstdbool>
+
 bool isPrime(int n)
 {
   int i=2;
