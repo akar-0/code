@@ -6,7 +6,7 @@ fn is_prime(x: i64) -> bool {
         if x%i == 0 {return false;}
         else {i += 2;}
     }
-    return true;
+    true
 }
 
 
@@ -22,7 +22,7 @@ fn is_prime(x: u64) -> bool {
         else {p += c[i];}
         i = (i+1)%8;
     }
-    return true;
+    true
 }
 
 fn next_prime(m: u32) -> u32 {
@@ -34,5 +34,5 @@ fn next_prime(m: u32) -> u32 {
     if isPrime(n) {return n;}
     else {n += 2;}
     }
-  return 1_u32
+  1_u32
 }
