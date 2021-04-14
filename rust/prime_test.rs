@@ -10,7 +10,7 @@ fn is_prime(x: i64) -> bool {
 }
 
 
-fn isPrime(x: u64) -> bool {
+fn is_prime(x: u64) -> bool {
     if x<2 {return false;}
     if x ==2 || x==3 || x == 5 || x == 7 {return true;}
     if x%2==0 || x%3==0 || x%5==0 {return false;}
@@ -25,7 +25,7 @@ fn isPrime(x: u64) -> bool {
     return true;
 }
 
-fn nextPrime(m: u32) -> u32 {
+fn next_prime(m: u32) -> u32 {
     let mut n=m;
   if n == 0 || n == 1 {return 2_u32;}
   if n%2==0 {n += 1;}
