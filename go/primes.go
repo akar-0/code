@@ -18,7 +18,7 @@ func NextPrime (n int) int {
   if (n%2)==0 {
     n++
   } else {n+=2}
-  for 1==1 {
+  for true {
     if IsPrime(n) {
       return n
     } else {n+=2}
