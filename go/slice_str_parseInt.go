@@ -5,4 +5,4 @@ import (
 
 s := strconv.FormatInt(int64(n),10)
 
-i, err := strconv.Atoi(s)
+n, err := strconv.Atoi(s)
