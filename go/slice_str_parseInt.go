@@ -3,6 +3,6 @@ import (
   "strconv"
   )
 
-  s := strconv.FormatInt(n,10)
+s := strconv.FormatInt(int64(n),10)
 
 n := strconv.Atoi(s)
