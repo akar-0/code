@@ -4,3 +4,5 @@ import (
   )
 
   s := strconv.FormatInt(n,10)
+
+n := strconv.Atoi(s)
