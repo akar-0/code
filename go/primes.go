@@ -25,3 +25,10 @@ func NextPrime (n int) int {
   }
   return -1
 }
+
+
+import "math/big"
+
+func isPrime(n int) bool { return big.NewInt(int64(n)).ProbablyPrime(0) }
+
+
