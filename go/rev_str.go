@@ -2,3 +2,10 @@
         r[i], r[j] = r[j], r[i]
     }
     s := string(r)
+func Rev(n int) int{
+  o := 0
+  for ; n>0 ; n/=10 {
+    o = o*10+n%10
+  }
+  return o
+}
