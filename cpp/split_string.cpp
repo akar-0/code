@@ -2,6 +2,7 @@
 // https://stackoverflow.com/questions/20755140/split-string-by-a-character 
 // https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/solutions/cpp
 //https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c
+//https://www.codewars.com/kata/58e24788e24ddee28e000053/solutions/cpp
 std::vector<std::string> split(const std::string& str, const std::string& delim)
 {
     std::vector<std::string> tokens;
