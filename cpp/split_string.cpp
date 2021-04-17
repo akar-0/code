@@ -11,7 +11,7 @@ std::vector<std::string> split(const std::string& s, const std::string& sep=" ")
     std::vector<std::string> tokens;
     size_t a = 0, b = 0;
     while (b < s.length() && a < s.length()) {
-        pos = s.find(sep, a);
+        b = s.find(sep, a);
         if (b == std::string::npos) b = s.length();
         std::string token = s.substr(a, b-a);
         if (!token.empty()) tokens.push_back(token);
