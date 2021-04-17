@@ -3,16 +3,19 @@
 // https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/solutions/cpp
 //https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c
 //https://www.codewars.com/kata/58e24788e24ddee28e000053/solutions/cpp
-std::vector<std::string> split(const std::string& str, const std::string& delim)
+#include <string>
+
+using namespace std;
+std::vector<std::string> split(const std::string& s, const std::string& sep=" ")
 {
     std::vector<std::string> tokens;
-    size_t prev = 0, pos = 0;
-    while (pos < str.length() && prev < str.length()) {
-        pos = str.find(delim, prev);
-        if (pos == std::string::npos) pos = str.length();
-        std::string token = str.substr(prev, pos-prev);
+    size_t a = 0, b = 0;
+    while (b < s.length() && a < s.length()) {
+        pos = s.find(sep, a);
+        if (b == std::string::npos) b = s.length();
+        std::string token = s.substr(a, b-a);
         if (!token.empty()) tokens.push_back(token);
-        prev = pos + delim.length();
+        a = b + sep.length();
       }
     return tokens;
 }
