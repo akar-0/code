@@ -3,6 +3,11 @@
 #include <algorithm>
 
 using namespace std;
-
-static string u(string s){return transform(s.begin(), s.end(),s.begin(), ::toupper);}
-static string l(string s){return transform(s.begin(), s.end(),s.begin(), ::tolower);}
+string u(string s){
+  transform(s.begin(), s.end(),s.begin(), ::toupper);
+  return s;
+}
+string l(string s){
+  transform(s.begin(), s.end(),s.begin(), ::tolower);
+    return s;
+}
