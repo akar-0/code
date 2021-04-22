@@ -1,1 +1,1 @@
-s.chars().nth(1).unwrap()
+s.chars().nth(i).unwrap()
