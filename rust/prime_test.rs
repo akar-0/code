@@ -1,3 +1,41 @@
+use std::collections::HashMap;
+
+fn factors(n: i32) -> HashMap<i32, i32> {
+    let mut arr = Vec::new();
+    let mut count: HashMap<i32, i32> = HashMap::new();
+    let c = [4, 2, 4, 2, 4, 6, 2, 6];
+    let mut m=n;
+    let mut p=7;
+    let mut i=0;
+    while m%2 == 0 {
+      arr.push(2);
+      m /= 2;
+    }
+    while m%3 == 0 {
+      arr.push(3);
+      m /= 3;
+    }
+    while m%5 == 0 {
+      arr.push(5);
+      m /= 5;
+    }
+    while m != 1 || p*p <= n {
+        while m%p == 0 {
+            arr.push(p);
+            m/=p;
+        }
+        p += c[i];
+        i = (i+1)%8;
+    }
+    if m > 1 {arr.push(m);}
+    for x in arr.to_owned().iter() {
+        *count.entry(*x).or_insert(0) += 1;
+    }
+    count
+}
+
+    
+    
 fn is_prime(x: i64) -> bool {
     if x ==2 || x==3 || x == 5 || x == 7 {return true;}
     if x < 2 || x%2 == 0 {return false;}
