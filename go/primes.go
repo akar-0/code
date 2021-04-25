@@ -1,35 +1,29 @@
 import (
   "math"
-  "sort"
-  "strings"
-  "fmt"
 )
 
 func factors(n int) map[int]int {
   m := n
   s := int(math.Sqrt(float64(n)))
   var a []int
+  b := [3]int{2, 3, 5}
+  c := [8]int{4, 2, 4, 2, 4, 6, 2, 6}
   d := make(map[int]int)
-  
+  p := 7
+  i := 0
+
   if n < 2 {
     d[n] = 1
     return d
   }
-  for m%2 == 0 {
-    a = append(a, 2)
-    m /= 2
+
+  for _,p := range b {
+    for m%p == 0 {
+      a = append(a,p)
+      m /= p
+    }
   }
-  for m%3 == 0 {
-    a = append(a, 3)
-    m /= 3
-  }
-  for m%5 == 0 {
-    a = append(a, 5)
-    m /= 5
-  }
-  c := [8]int{4, 2, 4, 2, 4, 6, 2, 6}
-  p := 7
-  i := 0
+
   for m != 1 || p <= s {
     for m%p == 0 {
       a = append(a,p)
