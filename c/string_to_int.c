@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/544675c6f971f7399a000e79/solutions/c
-atoi(n);
+atoi(s);
 
 //int to str
 // https://www.codewars.com/kata/56a4872cbb65f3a610000026/solutions
