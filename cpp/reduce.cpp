@@ -3,4 +3,4 @@
 std::accumulate(a.begin(), a.end(),0) //sum
 std::accumulate(a.begin(), a.end(), 1, std::multiplies<int>()) //mul
 
-  //POWA https://www.codewars.com/kata/5d0365accfd09600130a00c9/solutions/cpp
+//POWA https://www.codewars.com/kata/5d0365accfd09600130a00c9/solutions/cpp
