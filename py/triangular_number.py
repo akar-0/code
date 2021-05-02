@@ -6,3 +6,8 @@ def is_triangular(n):
     if (d < 0): return False
     e=d**.5
     return any(x>0 and x==int(x) for x in ((-b+e)/(2*a),(-b-e)/(2*a)))
+
+
+
+
+sum: n * (n + 1) * (n + 2) / 6
