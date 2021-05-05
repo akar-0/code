@@ -9,9 +9,7 @@ fn chunk(arr: Vec<i32>, h: i32) -> Vec<i32> {
         }
         x*=-1;
     } else {
-        for i in 0..l {
-            a.push(arr[i]);
-        }
+        a=arr.clone();
     }
     let step=x as usize;
     for i in (0..a.len()).step_by(step) {
