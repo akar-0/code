@@ -4,7 +4,7 @@
 
 using namespace std;
 string u(string s){
-  transform(s.begin(), s.end(),s.begin(), ::toupper);
+  transform(s.begin(), s.end(),s.begin(), ::tolower);
   return s;
 }
 string l(string s){
