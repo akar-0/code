@@ -5,3 +5,4 @@
 // https://www.codewars.com/kata/5b37a50642b27ebf2e000010/solutions
 // https://www.codewars.com/kata/5667525f0f157f7a0a000004/solutions/cpp
 // https://www.codewars.com/kata/reviews/5ae9c049ad6a2fdc6e0001a3/groups/5aeb20863078429cb60032f7
+// https://www.codewars.com/kata/565c4e1303a0a006d7000127/solutions/cpp
