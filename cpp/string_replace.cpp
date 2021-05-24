@@ -5,3 +5,5 @@
 // https://www.codewars.com/kata/58356a94f8358058f30004b5/solutions/cpp
 // https://www.codewars.com/kata/592fd8f752ee71ac7e00008a/solutions/cpp
 // https://www.codewars.com/kata/5b728f801db5cec7320000c7/solutions/cpp
+
+s.erase(std::remove(s.begin(), s.end(), ' '), s.end());
