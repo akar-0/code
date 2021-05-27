@@ -1,1 +1,2 @@
 [].concat(...arr)
+arr.flat()
