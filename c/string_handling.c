@@ -12,3 +12,4 @@
 // https://stackoverflow.com/questions/2114377/strings-in-c-how-to-get-substring
 // trim
 // https://stackoverflow.com/questions/122616/how-do-i-trim-leading-trailing-whitespace-in-a-standard-way
+// https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/solutions/c
