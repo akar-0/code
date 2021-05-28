@@ -7,3 +7,7 @@ use std::collections::HashMap;
     for c in s.to_owned().iter() {
         *a.entry(*c).or_insert(0) += 1;
     }
+
+
+
+s.matches(c).count()
