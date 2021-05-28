@@ -17,5 +17,6 @@
     doubles(&o)
 }
 // https://www.codewars.com/kata/55eeddff3f64c954c2000059/solutions/rust
+// https://www.codewars.com/kata/586d6cefbcc21eed7a001155/solutions/rust
 use itertools::Itertools;
 ...
