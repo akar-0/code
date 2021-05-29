@@ -8,4 +8,10 @@ int comp(const void * a, const void * b) {
    return (*(int*)a - *(int*)b);
 }
 
+
+cmp(*p, *q) 
+{ 
+  return *q - *p;
+}
+
   qsort(array, size_arr, sizeof(int), comp);
