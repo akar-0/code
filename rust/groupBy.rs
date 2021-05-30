@@ -22,3 +22,19 @@ use itertools::Itertools;
 ...
 // dedup_with_count
 // https://www.codewars.com/kata/5263c5d011f4233c9d000561/solutions/rust
+fn group_by(s: &str) -> String {
+    let mut o:Vec<String> = Vec::new();
+    let l=s.len();
+    let mut i=0;
+    while i < l {
+        let n=s.chars().nth(i).unwrap();
+        let mut c=1;
+        while i+1 < l && s.chars().nth(i+1).unwrap() == n {
+            i+=1;
+            c+=1;
+        }
+        o.push(format!("{}{}", c, n));
+        i+=1;
+    }
+    o.join("")
+}
