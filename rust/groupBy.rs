@@ -20,3 +20,5 @@
 // https://www.codewars.com/kata/586d6cefbcc21eed7a001155/solutions/rust
 use itertools::Itertools;
 ...
+// dedup_with_count
+// https://www.codewars.com/kata/5263c5d011f4233c9d000561/solutions/rust
