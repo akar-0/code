@@ -48,14 +48,52 @@ fn is_prime(x: i64) -> bool {
 }
 
 
-fn is_prime(x: u64) -> bool {
+fn count_factors(n: i32) -> i32 {
+    if n == 0 {
+        return 0
+    }
+    if n < 2 {
+        return 1
+    }
+    let mut o=0;
+    let s=(n as f64).sqrt() as i32;
+    let c = [4, 2, 4, 2, 4, 6, 2, 6];
+    let mut m=n;
+    let mut p=7;
+    let mut i=0;
+    while m%2 == 0 {
+      o+=1;
+      m /= 2;
+    }
+    while m%3 == 0 {
+      o+=1;
+      m /= 3;
+    }
+    while m%5 == 0 {
+      o+=1;
+      m /= 5;
+    }
+    while m != 1 || p <= s {
+        while m%p == 0 {
+            o+=1;
+            m/=p;
+        }
+        p += c[i];
+        i = (i+1)%8;
+    }
+    if m > 1 {o+=1;}
+    o
+}
+
+fn is_prime(x: i32) -> bool {
     if x<2 {return false;}
     if x ==2 || x==3 || x == 5 || x == 7 {return true;}
     if x%2==0 || x%3==0 || x%5==0 {return false;}
     let c = [4, 2, 4, 2, 4, 6, 2, 6];
     let mut p = 7;
     let mut i=0;
-    while p*p <= x {
+    let s=(x as f64).sqrt() as i32;
+    while p <= s {
         if x%p == 0 {return false;}
         else {p += c[i];}
         i = (i+1)%8;
