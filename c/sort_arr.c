@@ -4,6 +4,11 @@
 
 #include <stdlib.h>
 
+int cmp_ch(char *p, char *q)
+{
+  return *q - *p;
+}
+
 int comp(const void * a, const void * b) {
    return (*(int*)a - *(int*)b);
 }
