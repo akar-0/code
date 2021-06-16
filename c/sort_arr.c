@@ -1,6 +1,7 @@
 // https://www.codewars.com/kata/5f55ecd770692e001484af7d/solutions/c
 // https://www.codewars.com/kata/550498447451fbbd7600041c/solutions
 // !!!! https://www.codewars.com/kata/5629db57620258aa9d000014/solutions/c
+//!!!!   https://www.codewars.com/kata/58e0cb3634a3027180000040/solutions/c
 
 #include <stdlib.h>
 
