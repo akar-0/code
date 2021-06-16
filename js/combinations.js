@@ -4,7 +4,9 @@ function comb(arr,n){
   if (n==1) return arr
   let L=[]
   for (let i=0;i<arr.length-n+1;i++){
-    L=L.concat(comb(arr.slice(i+1), n-1).map(x=>x+arr[i]))
+    for (const x of comb(arr.slice(i+1), n-1)){
+      L.push([arr[i]].concat(x))
+    }
   }
   return L
 }
