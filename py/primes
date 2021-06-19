@@ -22,3 +22,19 @@ p=17
 while p<=999983:
     if is_prime(p):P.append(p)
     p += next(i)
+
+
+
+-----
+n=1000000
+c = n%6>1
+n={0:n, 1:n-1, 2:n+4, 3:n+3, 4:n+2, 5:n+1}[n%6]
+L=[True]*(n//3)
+L[0]=False
+for i in range(int(n**.5)// 3 + 1):
+    if L[i]:
+        j=(3*i+1)|1
+        h=j*j
+        L[h//3::2*j]=[False] *((n//6-1-h//6)//j+1)
+        L[(h+4*j-2*j*(i%2))//3::2*j]=[False]*(1+(n//6-1-(h+4*j-2*j*(i%2))//6)//j)
+P=[2,3]+[(3*i+1)|1 for i in filter(lambda x:L[x],range(1,n//3-c))]
