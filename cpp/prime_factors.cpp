@@ -23,7 +23,7 @@ unordered_map<int,unsigned> factors(int n) {
     arr.push_back(5);
     m /= 5;
   }
-  vector<int> c={4, 2, 4, 2, 4, 6, 2, 6};
+  int c[8]={4, 2, 4, 2, 4, 6, 2, 6};
   while (m!=1 || p*p<=n) {
     while (!(m%p)){
       m/=p;
@@ -69,8 +69,7 @@ bool isPrime(int n){
   if (n<2){return false;}
   if (n==2||n==3||n==5||n==7){return true;}
   if (!(n%2)||!(n%3)||!(n%5)||!(n%7)){return false;}
-  vector<int> c={4, 2, 4, 2, 4, 6, 2, 6};
-  int p=7, i=0;
+  int c[8]={4, 2, 4, 2, 4, 6, 2, 6}, p=7, i=0;
   while (p*p<=n)
     {
     if (!(n%p)){return false;}
