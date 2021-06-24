@@ -7,7 +7,7 @@
 
 int cmp_ch(char *p, char *q)
 {
-  return *q - *p;
+  return *p - *q;
 }
 
 int comp(const void * a, const void * b) {
