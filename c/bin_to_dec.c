@@ -20,3 +20,17 @@ char* bin(unsigned int k)
   }
   return b;
 }
+
+
+// 8 bits
+char* bin(unsigned int k)
+{
+   char* b=calloc(9, sizeof(char));
+   int i=8; 
+   while (i--){
+      b[i]=(k&1)+'0';
+      k>>=1;
+   }
+  b[8]='\0';
+  return b;
+}
