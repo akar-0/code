@@ -74,3 +74,19 @@ def goldbach_partitions(n):
     else: return L
   
   
+  
+  -----
+  
+ JavaScript
+
+function bears(x, s){
+  let res=s.match(/B8|8B/g) || []
+  return [res.join(''), res.length>=x]
+}
+
+Python
+
+import re
+def bears(x,s):
+    b=''.join(re.findall(r"(B8|8B)",s))
+    return [b,len(b)//2>=x]
