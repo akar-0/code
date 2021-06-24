@@ -50,26 +50,3 @@ Data* backwardsPrime(ll start, ll end) {
   o.sz=k;
   return &o;
 }
-
-
-
-------
-from itertools import cycle
-from gmpy2 import is_prime
-primes=[2,3,5]
-p=7
-i=iter(cycle((4, 2, 4, 2, 4, 6, 2, 6)))
-while primes[-1]<31991:
-    if is_prime(p):primes.append(p)
-    p += next(i)
-
-def goldbach_partitions(n):
-    if n%2: return []
-    L, S = [], {}
-    i=iter(primes)
-    p=next(i)
-    while 2*p<=n:
-        if n-p in primes: L.append(f"{p}+{n-p}")
-        p=next(i)
-    else: return L
-  
