@@ -92,15 +92,4 @@ def bears(x,s):
     return [b,len(b)//2>=x]
             
             
-            
--------
-            
-            
-            
-function encode(text) {
-  return [...text].map(c=>c.charCodeAt(0).toString(2).padStart(8,'0').replace(/1/g,'111').replace(/0/g,'000')).join('')
-}
-
-function decode(bits) {
-  return bits.replace(/.../g, function (b){return [...b].filter(a=>a=='1').length>1?'1':'0'}).replace(/.{8}/g, function (h){return String.fromCharCode(parseInt(h,2))})
-}
+ 
