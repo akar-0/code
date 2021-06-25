@@ -1,7 +1,18 @@
 https://www.codewars.com/kata/554ca54ffa7d91b236000023/train/c
 https://www.codewars.com/kata/5ae24f79c5a452e1780000ad/train/javascript
-https://www.codewars.com/kata/5977ae37fd72c64008000081
 
+
+
+var util = require('util');
+this.prisoner=null
+function jail() {
+const a=[...arguments]
+console.log(Object.keys(jail))
+console.log(Object.keys(a))
+console.log(Reflect.ownKeys(jail),jail.caller.toString())
+
+var x=""
+} 
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
