@@ -21,3 +21,14 @@ function comb(arr,n){
   }
   return L
 }
+// retourne des sommes
+function prod(arr,n){
+  if (n==1) return arr
+  const L=[]
+  for (const e of arr){
+    for (const x of prod(arr, n-1)){
+      L.push(e+x)
+    }
+  }
+  return L
+}
