@@ -3,7 +3,9 @@
 // !!!! https://www.codewars.com/kata/5629db57620258aa9d000014/solutions/c
 //!!!!   https://www.codewars.com/kata/58e0cb3634a3027180000040/solutions/c
 // !!!!!!!! https://www.codewars.com/kata/536c6b8749aa8b3c2600029a/solutions/c
-          
+// https://www.codewars.com/kata/59fa8e2646d8433ee200003f/solutions/c
+
+
 #include <stdlib.h>
 
 int cmp_ch(char *p, char *q)
