@@ -2,7 +2,7 @@
 // https://www.codewars.com/kata/58ad29bc4b852b14a4000050/solutions/javascript
 function comb(arr,n){
   if (n==1) return arr
-  let L=[]
+  const L=[]
   for (let i=0;i<arr.length-n+1;i++){
     for (const x of comb(arr.slice(i+1), n-1)){
       L.push([arr[i]].concat(x))
