@@ -95,3 +95,49 @@ function isPrime(n){
  return true
 }
 
+
+
+
+class Primes {
+  static *stream() {
+    yield 2
+    yield 3
+    yield 5
+    yield 7
+    const map=new Map(), st=Primes.stream()
+    st.next()&&st.next()
+    let x=3, p=7
+    while (1) {
+      p+=2
+      let val=map.get(p)||-1
+      if (val>=0) map.delete(p) //>0???
+      else if (p<x*x){
+        yield p
+        continue
+       }
+       else {
+         val=x*2
+         x=gen.next()['value']
+        }
+        let k=p+val
+        while (map.has(k)) k+=val
+        map.set(k, val)
+      }
+  }
+}
+
+
+const top=6000000, L=[false,false].concat(new Array(top-2).fill(1)), l=L.length, s=[]
+class Primes {
+  static * stream() {
+      for (let i=0;i<l;i++){
+        if (L[i]){
+           yield i
+           if (!s[i]){
+             s[i]==1
+             for (let k = i*i;k<top;k+=i) L[k] = false
+            }
+        }
+      }
+  }
+}
