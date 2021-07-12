@@ -1,5 +1,6 @@
 // https://www.codewars.com/kata/reviews/592fa94eefc2d04fe900016d/groups/5f81eb9f6ddaa3000196196d
 
+const groupBy=x=>require('ramda').groupWith((a,b)=>a===b, x)
 
 function groupBy(L){
   const res=[]
