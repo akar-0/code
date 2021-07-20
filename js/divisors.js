@@ -8,3 +8,12 @@ function divisors(n){
   }
  return a
 }
+// count divisors
+  let h=0
+  for (let k=1;k<=n**.5;k++){
+    if (n%k==0){
+      if (n/k==k) h++
+      else h+=2
+    }
+  }
+return h
