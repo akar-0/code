@@ -1,3 +1,4 @@
+// https://www.codewars.com/kata/5927db23fb1f934238000015/solutions/javascript
 
 function factors(n){
   let m=n
