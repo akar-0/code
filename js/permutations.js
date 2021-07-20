@@ -11,3 +11,26 @@ function permutations (arr,l=arr.length,p=[]) {
   }
   return p
 }
+
+
+// https://stackoverflow.com/questions/9960908/permutations-in-javascript/37580979#37580979
+function permutations(a,l=a.length) {
+  const L = [a.slice()],
+      c =Array(l).fill(0)
+  let i = 1, k, p
+  while (i<l){
+    if (c[i] < i) {
+      k=i&1 && c[i]
+      p=a[i]
+      a[i]=a[k]
+      a[k]=p
+      c[i]++
+      i=1
+      L.push(a.slice())
+    } else {
+      c[i] = 0
+      i++
+    }
+  }
+  return L
+}
