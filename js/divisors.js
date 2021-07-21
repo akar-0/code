@@ -18,3 +18,5 @@ function divisors(n){
   }
 return h
 // plus rapide : https://www.geeksforgeeks.org/count-divisors-n-on13/
+//check aussi :
+// https://www.codewars.com/kata/59dc6a967905dfb7530000aa/solutions/javascript
