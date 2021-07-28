@@ -4,3 +4,11 @@
 
 
  /regex/.match(s) != nil
+
+!!s[/regex/]
+
+!!(s =~ /regex/)
+
+/regex/ === s
+
+(/regex/=~s)!=nil
