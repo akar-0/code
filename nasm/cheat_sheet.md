@@ -8,4 +8,7 @@
 
 then stack...
 
-
+```nasm
+xor rdx, rdx
+```
+avant de faire une division....
