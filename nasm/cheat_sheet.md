@@ -15,4 +15,4 @@ avant de faire une division....
 
 * sqrt: sqrtsd xmm0, xmm0
 * int to float: cvtsi2sd xmm0,rax
-*  
+*  move a int32 into an int64:  movsx rax, ebx
