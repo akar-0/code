@@ -12,3 +12,7 @@ then stack...
 xor rdx, rdx
 ```
 avant de faire une division....
+
+* sqrt: sqrtsd xmm0, xmm0
+* int to float: cvtsi2sd xmm0,rax
+*  
