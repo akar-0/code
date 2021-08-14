@@ -5,7 +5,7 @@
 | rax    |  eax   |  ax  | al | ah | |
 | rbx    |  ebx   | bx   | bl | bh | |
 | rcx    |  ecx   | cx   | cl | ch | |
-| rdx    |  edx   | dx   | dl | dh | third function argument - holds remainder in integer division |
+| rdx    |  edx   | dx   | dl | dh | third function argument - holds **remainder in integer division** |
 |  rsi   | esi | si | sil | none| second function argument |
 | rdi | edi | di | dil | none | first function argument |
 | rbp | ebp | bp | bpl | none| base pointer|
