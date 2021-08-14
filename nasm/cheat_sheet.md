@@ -29,8 +29,13 @@ xor rdx, rdx
 before div/idiv....
 
 * sqrt: sqrtsd xmm0, xmm0
-* int to float: cvtsi2sd xmm0,rax
+
 *  move a int32 into an int64:  movsx rax, ebx ( https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/solutions )
 *  [test](https://en.wikipedia.org/wiki/TEST_(x86_instruction))
 * dword = double word =  int32
 * qword = quadword = int64
+
+## Conversions
+* [doc](https://docs.oracle.com/cd/E19120-01/open.solaris/817-5477/epmsr/index.html)
+* int to float: cvtsi2sd xmm0,rax
+* float to int: [CW](https://www.codewars.com/kata/5a805d8cafa10f8b930005ba/solutions/nasm)
