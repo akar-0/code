@@ -39,3 +39,4 @@ before div/idiv....
 * [doc](https://docs.oracle.com/cd/E19120-01/open.solaris/817-5477/epmsr/index.html)
 * int to float: cvtsi2sd xmm0,rax
 * float to int: [CW](https://www.codewars.com/kata/5a805d8cafa10f8b930005ba/solutions/nasm)
+* clear float: pxor xmm0,xmm0
