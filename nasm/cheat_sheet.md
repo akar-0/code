@@ -17,3 +17,5 @@ before div/idiv....
 * int to float: cvtsi2sd xmm0,rax
 *  move a int32 into an int64:  movsx rax, ebx ( https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/solutions )
 *  [test](https://en.wikipedia.org/wiki/TEST_(x86_instruction))
+* dword = double word =  int32
+* qword = quadword = int64
