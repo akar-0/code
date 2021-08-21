@@ -14,7 +14,7 @@ function comb(arr,n){
 function comb(arr,n){
   if (n==1) return arr
   let L=[]
-  for (let i=0;i<arr.length-n+2;i++){
+  for (let i=0;i<arr.length-n;i++){
     for (const x of comb(arr.slice(i), n-1)){
       L.push([arr[i]].concat(x))
     }
