@@ -2,3 +2,4 @@
 -- https://www.codewars.com/kata/5b077ebdaf15be5c7f000077/solutions/haskell
 -- Abbreviate a Two Word Name:
 -- https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/solutions/haskell
+-- https://www.codewars.com/kata/5966eeb31b229e44eb00007a/solutions/haskell
