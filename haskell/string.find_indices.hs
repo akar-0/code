@@ -1,1 +1,3 @@
 -- https://www.codewars.com/kata/5680781b6b7c2be860000036/solutions/haskell
+-- https://www.codewars.com/kata/57ee24e17b45eff6d6000164/solutions/haskell
+-- http://zvon.org/other/haskell/Outputlist/elemIndex_f.html
