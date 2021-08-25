@@ -2,3 +2,5 @@
 -- https://www.codewars.com/kata/5262119038c0985a5b00029f/solutions
 -- nextPrime
 -- https://www.codewars.com/kata/58e230e5e24dde0996000070/solutions/haskell
+-- not primes
+-- https://www.codewars.com/kata/5a9a70cf5084d74ff90000f7/solutions/haskell
