@@ -3,3 +3,5 @@
 -- Abbreviate a Two Word Name:
 -- https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/solutions/haskell
 -- https://www.codewars.com/kata/5966eeb31b229e44eb00007a/solutions/haskell
+-- Moves in squared strings (I)
+-- https://www.codewars.com/kata/56dbe0e313c2f63be4000b25/solutions/haskell
