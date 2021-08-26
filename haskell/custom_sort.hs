@@ -1,1 +1,3 @@
 -- https://www.codewars.com/kata/57eba158e8ca2c8aba0002a0/solutions/haskell
+-- sortOn
+-- https://www.codewars.com/kata/5af15a37de4c7f223e00012d/solutions/haskell
