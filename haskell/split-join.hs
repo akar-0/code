@@ -7,3 +7,5 @@
 -- https://www.codewars.com/kata/56dbe0e313c2f63be4000b25/solutions/haskell
 -- wordsBy
 -- https://www.codewars.com/kata/reviews/5a69894368af64d9b5000444/groups/5a6997ffd8749b22420015ec
+-- intersperse
+-- https://www.codewars.com/kata/57f8ee485cae443c4d000127/solutions/haskell
