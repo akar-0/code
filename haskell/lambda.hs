@@ -1,1 +1,2 @@
 -- https://www.codewars.com/kata/5b6c220fa0a661fbf200005d/solutions/haskell
+-- https://www.codewars.com/kata/538835ae443aae6e03000547/solutions/haskell
