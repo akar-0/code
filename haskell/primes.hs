@@ -4,3 +4,4 @@
 -- https://www.codewars.com/kata/58e230e5e24dde0996000070/solutions/haskell
 -- not primes
 -- https://www.codewars.com/kata/5a9a70cf5084d74ff90000f7/solutions/haskell
+-- https://www.codewars.com/kata/5a9996fa8e503f2b4a002e7a/solutions
