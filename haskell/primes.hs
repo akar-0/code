@@ -1,5 +1,6 @@
 -- isPrime
 -- https://www.codewars.com/kata/5262119038c0985a5b00029f/solutions
+-- https://www.codewars.com/kata/5507309481b8bd3b7e001638/solutions/haskell
 -- nextPrime
 -- https://www.codewars.com/kata/58e230e5e24dde0996000070/solutions/haskell
 -- not primes
