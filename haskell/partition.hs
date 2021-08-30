@@ -1,0 +1,1 @@
+-- https://www.codewars.com/kata/59ddeeb2fc3c49186f00009c/solutions/haskell
