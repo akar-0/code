@@ -1,2 +1,4 @@
 -- stripPrefix
 -- https://www.codewars.com/kata/557af4c6169ac832300000ba/solutions/haskell
+-- seven hate 9
+-- https://www.codewars.com/kata/559f44187fa851efad000087/solutions/haskell
