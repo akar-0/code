@@ -1,1 +1,5 @@
 -- https://www.codewars.com/kata/59ddeeb2fc3c49186f00009c/solutions/haskell
+-- partitionsEither
+-- https://www.codewars.com/kata/reviews/5d6e94e3476ab30001a216c6/groups/5d6ea88dc968e80001f538a8
+-- partition (fn)
+-- https://www.codewars.com/kata/56f7493f5d7c12d1690000b6/solutions/haskell
