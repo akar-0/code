@@ -4,3 +4,6 @@
 -- fromJust
 -- https://www.codewars.com/kata/57da675dfa96908b16000040/solutions/haskell
 -- https://www.codewars.com/kata/57da7ca63150b02e6400026b/solutions/haskell
+
+
+-- https://www.codewars.com/kata/576bb3c4b1abc497ec000065/solutions/haskell
