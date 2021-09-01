@@ -3,3 +3,4 @@
 -- https://www.codewars.com/kata/5af15a37de4c7f223e00012d/solutions/haskell
 -- maximumBy 
 -- https://www.codewars.com/kata/5939ab6eed348a945f0007b2/solutions/haskell
+--https://www.codewars.com/kata/53da6a7e112bd15cbc000012/solutions/haskell
