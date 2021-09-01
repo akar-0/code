@@ -10,3 +10,5 @@
 -- https://www.codewars.com/kata/reviews/5a69894368af64d9b5000444/groups/5a6997ffd8749b22420015ec
 -- intersperse
 -- https://www.codewars.com/kata/57f8ee485cae443c4d000127/solutions/haskell
+-- oneOf!!
+-- https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/solutions/haskell
