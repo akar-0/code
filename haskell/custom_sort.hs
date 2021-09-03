@@ -4,3 +4,5 @@
 -- maximumBy 
 -- https://www.codewars.com/kata/5939ab6eed348a945f0007b2/solutions/haskell
 --https://www.codewars.com/kata/53da6a7e112bd15cbc000012/solutions/haskell
+-- two keys!
+-- https://www.codewars.com/kata/5453dce502949307cf000bff/solutions/haskell
