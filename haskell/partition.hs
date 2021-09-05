@@ -3,3 +3,4 @@
 -- https://www.codewars.com/kata/reviews/5d6e94e3476ab30001a216c6/groups/5d6ea88dc968e80001f538a8
 -- partition (fn)
 -- https://www.codewars.com/kata/56f7493f5d7c12d1690000b6/solutions/haskell
+-- https://www.codewars.com/kata/reviews/5b05b923e7543a91050020eb/groups/5b26891943e7ad74e40014bf
