@@ -9,3 +9,5 @@
 -- https://www.codewars.com/kata/5a9996fa8e503f2b4a002e7a/solutions
 -- backward read primes
 -- https://www.codewars.com/kata/5539fecef69c483c5a000015/solutions/haskell
+-- step in primes
+-- https://www.codewars.com/kata/5613d06cee1e7da6d5000055/solutions/haskell
