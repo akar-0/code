@@ -1,5 +1,6 @@
 -- https://www.codewars.com/kata/57eba158e8ca2c8aba0002a0/solutions/haskell
 -- sortOn
+-- https://www.codewars.com/kata/5970df092ef474680a0000c9/solutions/haskell
 -- https://www.codewars.com/kata/5af15a37de4c7f223e00012d/solutions/haskell
 -- maximumBy 
 -- https://www.codewars.com/kata/5939ab6eed348a945f0007b2/solutions/haskell
