@@ -1,3 +1,4 @@
+-- https://www.codewars.com/kata/59ab0ca4243eae9fec000088/solutions/haskell
 -- isPrime
 -- https://www.codewars.com/kata/5262119038c0985a5b00029f/solutions
 -- https://www.codewars.com/kata/5507309481b8bd3b7e001638/solutions/haskell
