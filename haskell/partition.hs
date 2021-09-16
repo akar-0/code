@@ -4,3 +4,5 @@
 -- partition (fn)
 -- https://www.codewars.com/kata/56f7493f5d7c12d1690000b6/solutions/haskell
 -- https://www.codewars.com/kata/reviews/5b05b923e7543a91050020eb/groups/5b26891943e7ad74e40014bf
+-- partition even / odd
+-- https://www.codewars.com/kata/59c7e477dcc40500f50005c7/solutions/haskell
