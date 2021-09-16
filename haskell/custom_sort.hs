@@ -9,3 +9,4 @@
 -- https://www.codewars.com/kata/5453dce502949307cf000bff/solutions/haskell
 -- compareOn (avoids having: fn -> Ordering)
 -- https://www.codewars.com/kata/58068479c27998b11900056e/solutions/haskell
+-- https://www.codewars.com/kata/59fa8e2646d8433ee200003f/solutions/haskell
