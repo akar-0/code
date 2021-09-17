@@ -7,6 +7,7 @@
 --https://www.codewars.com/kata/53da6a7e112bd15cbc000012/solutions/haskell
 -- two keys!
 -- https://www.codewars.com/kata/5453dce502949307cf000bff/solutions/haskell
+-- https://www.codewars.com/kata/5a8d2bf60025e9163c0000bc/solutions/haskell
 -- compareOn (avoids having: fn -> Ordering)
 -- https://www.codewars.com/kata/58068479c27998b11900056e/solutions/haskell
 -- https://www.codewars.com/kata/59fa8e2646d8433ee200003f/solutions/haskell
