@@ -14,3 +14,4 @@
 -- https://www.codewars.com/kata/5613d06cee1e7da6d5000055/solutions/haskell
 -- sieve
 -- https://www.codewars.com/kata/5a908da30025e995880000e3/solutions/haskell
+-- https://www.codewars.com/kata/5a9078e24a6b340b340000b8/solutions/haskell
