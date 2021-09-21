@@ -1,3 +1,19 @@
+factors :: Integer -> [Integer]
+factors x = [n | n <- [3,5..s], mod x n == 0]
+            where s = ceiling $ sqrt $ fromIntegral x
+
+isPrime :: Integer -> Bool
+isPrime x
+  | x < 2        = False
+  | x == 2       = True
+  | mod x 2 == 0 = False
+  | otherwise    = all (\p -> mod x p == 0) [3,5..s]
+    where s = ceiling $ sqrt $ fromIntegral x
+
+nextPrime :: Integer -> Integer
+nextPrime n = head $ filter isPrime [n+1..]
+
+
 -- https://www.codewars.com/kata/59ab0ca4243eae9fec000088/solutions/haskell
 -- isPrime
 -- https://www.codewars.com/kata/5262119038c0985a5b00029f/solutions
