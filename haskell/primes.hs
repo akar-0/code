@@ -7,7 +7,7 @@ isPrime x
   | x < 2        = False
   | x == 2       = True
   | mod x 2 == 0 = False
-  | otherwise    = all (\p -> mod x p == 0) [3,5..s]
+  | otherwise    = all (\p -> mod x p /= 0) [3,5..s]
     where s = ceiling $ sqrt $ fromIntegral x
 
 nextPrime :: Integer -> Integer
