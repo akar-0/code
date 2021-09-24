@@ -34,3 +34,5 @@ nextPrime n = head $ filter isPrime [n+1..]
 -- https://www.codewars.com/kata/521ef596c106a935c0000519/solutions/haskell
 -- totient
 -- https://www.codewars.com/kata/53c9157c689f841d16000c03/solutions/haskell
+-- kprimes
+-- https://www.codewars.com/kata/5726f813c8dcebf5ed000a6b/solutions/haskell
