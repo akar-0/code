@@ -1,3 +1,8 @@
+-- descending
+import Data.List
+
+sortBy (flip compare) s
+
 -- https://www.codewars.com/kata/57eba158e8ca2c8aba0002a0/solutions/haskell
 -- sortOn
 -- https://www.codewars.com/kata/5970df092ef474680a0000c9/solutions/haskell
