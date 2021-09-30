@@ -13,4 +13,4 @@
 
 import Data.Maybe
 
-index = fromJust . elemIndex
+index e a = fromJust $ elemIndex e a
