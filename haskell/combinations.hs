@@ -7,4 +7,6 @@ prod a b = [[x,y] | x <- a, y <- b]
 -- https://www.codewars.com/kata/577e694af5db624cf30002d0/solutions/haskell
 -- permutations
 -- https://www.codewars.com/kata/5b8be3ae36332f341e00015e/solutions/haskell
+-- subsequences
+-- https://www.codewars.com/kata/59eb64cba954273cd4000099/solutions/haskell
 perm n = concat $ map(\i -> map(\j -> (i,j)) $ filter(/=i) [0..n-1]) [0..n-1]
