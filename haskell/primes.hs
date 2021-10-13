@@ -1,6 +1,7 @@
 factors :: Integer -> [Integer]
 factors x = [n | n <- [3,5..s], mod x n == 0]
             where s = ceiling $ sqrt $ fromIntegral x
+-- https://www.codewars.com/kata/55f0b69fe3ef582c4100008a/solutions/haskell
 
 isPrime :: Integer -> Bool
 isPrime x
