@@ -2,6 +2,8 @@
 [(x,y) | x <- xs, y <- ys]
 prod a b = [[x,y] | x <- a, y <- b]
 
+import Data.List
+import Data.Ord
 combinations = (. subsequences) . filter . (. length) . (==)
 
 --combinations
