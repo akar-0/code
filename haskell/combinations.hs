@@ -1,4 +1,5 @@
 -- cartesian product
+-- https://www.codewars.com/kata/5d0365accfd09600130a00c9/solutions/haskell
 [(x,y) | x <- xs, y <- ys]
 prod a b = [[x,y] | x <- a, y <- b]
 
