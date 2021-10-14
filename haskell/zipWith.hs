@@ -1,0 +1,1 @@
+-- https://www.codewars.com/kata/59549d482a68fe3bc2000146/train/haskell
