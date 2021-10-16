@@ -40,3 +40,8 @@ before div/idiv....
 * int to float: cvtsi2sd xmm0,rax
 * float to int: [CW](https://www.codewars.com/kata/5a805d8cafa10f8b930005ba/solutions/nasm)
 * clear float: pxor xmm0,xmm0
+
+## floats
+* mulsd xmm1, xmm2
+* comisd xmm1, xmm0 
+* ja(e) / jb(e)
