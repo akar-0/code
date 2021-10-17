@@ -6,6 +6,11 @@ char* bin(unsigned int k)
 {
    char *b;
    b = calloc(65, sizeof(char));
+  if (!k){
+    b[0]='0';
+    b[1]='\0';
+    return b;
+  }
    int i=0; 
    while (k){
       b[i++]=(k&1)+'0';
