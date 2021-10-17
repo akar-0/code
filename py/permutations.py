@@ -1,3 +1,5 @@
+# scipy.special.comb, perm...
+# https://www.codewars.com/kata/616c7698ccceda004b58e4bb/solutions/python 
 from math import factorial
 
 def nth_perm(n,d):
