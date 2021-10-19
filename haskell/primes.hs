@@ -19,7 +19,8 @@ isPrime x
 nextPrime :: Integer -> Integer
 nextPrime n = head $ filter isPrime [n+1..]
 
-
+-- sum by factors
+-- https://www.codewars.com/kata/54d496788776e49e6b00052f/solutions/haskell
 -- https://www.codewars.com/kata/59ab0ca4243eae9fec000088/solutions/haskell
 -- isPrime
 -- https://www.codewars.com/kata/5262119038c0985a5b00029f/solutions
