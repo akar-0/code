@@ -1,6 +1,11 @@
 factors :: Integer -> [Integer]
-factors x = [n | n <- [3,5..s], mod x n == 0]
-            where s = ceiling $ sqrt $ fromIntegral x
+factors n | n < 2 = []
+          | even n = 2 : factors (div n 2)
+          | null a = [n]
+          | otherwise = h : factors (div n h)
+  where
+    a = filter(\x -> mod n x == 0) [3,5..floor $ sqrt $ fromIntegral n]
+    h = head a 
 -- https://www.codewars.com/kata/55f0b69fe3ef582c4100008a/solutions/haskell
 
 isPrime :: Integer -> Bool
