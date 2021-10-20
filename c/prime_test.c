@@ -1,3 +1,5 @@
+// sum by factors
+// https://www.codewars.com/kata/54d496788776e49e6b00052f/solutions/c
 #include <stdbool.h>
 #include <math.h>
 
