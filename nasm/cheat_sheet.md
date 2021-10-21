@@ -45,3 +45,7 @@ before div/idiv....
 * mulsd xmm1, xmm2
 * comisd xmm1, xmm0 
 * ja(e) / jb(e)
+
+test parity
+  test eax,1
+  jz _even
