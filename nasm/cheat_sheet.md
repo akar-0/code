@@ -49,3 +49,4 @@ before div/idiv....
 test parity
   test eax,1
   jz _even
+  bts
