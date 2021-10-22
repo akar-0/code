@@ -46,7 +46,15 @@ before div/idiv....
 * comisd xmm1, xmm0 
 * ja(e) / jb(e)
 
-test parity
-  test eax,1
-  jz _even
-  bts
+## test parity
+* test eax,1
+* jz _even
+
+## 2^n
+* xor rax,rax
+* bts rax,10 (??? rax = 2^10)
+ 
+ ## test zero
+ * test rax,rax
+ * jz/jnz blabla
+ 
