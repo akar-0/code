@@ -58,3 +58,9 @@ before div/idiv....
  * test rax,rax
  * jz/jnz blabla
  
+ ## multiline comments
+ ```
+ %ifdef COMMENT
+...
+%endif
+```
