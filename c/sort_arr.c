@@ -11,6 +11,11 @@
 int cmp_ch(char *p, char *q)
 {
   return *p - *q;
+} //??????????
+
+
+int cmp_chr(const void *a, const void *b) {
+  return *(char*)a - *(char*)b;
 }
 
 int comp(const void * a, const void * b) {
