@@ -4,3 +4,5 @@
 // https://www.codewars.com/kata/523b623152af8a30c6000027/solutions/cobol
 // elegant if else
 // https://www.codewars.com/kata/580878d5d27b84b64c000b51/solutions/cobol
+// perform
+// https://www.codewars.com/kata/reviews/6182c7256d2f160001947817/groups/6182d811ffb9d0000160e671
