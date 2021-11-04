@@ -6,3 +6,5 @@
 // https://www.codewars.com/kata/580878d5d27b84b64c000b51/solutions/cobol
 // perform
 // https://www.codewars.com/kata/reviews/6182c7256d2f160001947817/groups/6182d811ffb9d0000160e671
+// recursion
+// https://stackoverflow.com/questions/27806812/in-cobol-is-it-possible-to-recursively-call-a-paragraph
