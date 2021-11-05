@@ -8,3 +8,5 @@
 // https://www.codewars.com/kata/reviews/6182c7256d2f160001947817/groups/6182d811ffb9d0000160e671
 // recursion
 // https://stackoverflow.com/questions/27806812/in-cobol-is-it-possible-to-recursively-call-a-paragraph
+// floats
+// https://www.codewars.com/kata/5b0d67c1cb35dfa10b0022c7/solutions/cobol
