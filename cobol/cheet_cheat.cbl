@@ -12,3 +12,6 @@
 // https://www.codewars.com/kata/5b0d67c1cb35dfa10b0022c7/solutions/cobol
 // exit perform
 // https://www.codewars.com/kata/reviews/618538caf715af0001a90c2a/groups/618570cf510b09000193610d
+
+      ceil
+      compute x rounded mode toward-greater = 
