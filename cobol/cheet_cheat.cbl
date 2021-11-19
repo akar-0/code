@@ -14,4 +14,17 @@
 // https://www.codewars.com/kata/reviews/618538caf715af0001a90c2a/groups/618570cf510b09000193610d
 
       ceil
+      
+      
       compute x rounded mode toward-greater = 
+
+      initialize assertion-message
+if function abs(expected - result) < 1.0e-9
+   perform assert-true
+else
+   string result 
+      ' should be approximately equal to '
+      expected
+    into assertion-message
+   perform assert-false
+end-if
