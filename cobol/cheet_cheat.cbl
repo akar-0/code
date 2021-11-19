@@ -14,7 +14,8 @@
 // https://www.codewars.com/kata/reviews/618538caf715af0001a90c2a/groups/618570cf510b09000193610d
 
       ceil
-      
+
+Monadius:
       
       compute x rounded mode toward-greater = 
 
@@ -28,3 +29,7 @@ else
     into assertion-message
    perform assert-false
 end-if
+
+      
+      
+PIC -(1)9. can hold one digit only. In general, PIC -(n)9. can hold n digits only. The extra symbol is reserved for the sign.
