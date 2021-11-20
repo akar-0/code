@@ -1,0 +1,130 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. TESTS.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 EXPECTED    PIC 9(8).
+       01 N-DISP      PIC Z(7)9.
+       01 N           PIC 9(8).
+       01 M           PIC 9(8).
+       01 RESULT      PIC 9(8).
+       PROCEDURE DIVISION.
+           TESTSUITE 'Fixed Tests'.
+           MOVE 0 TO N
+           MOVE 0 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 1 TO N
+           MOVE 1 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 2 TO N
+           MOVE 1 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 3 TO N
+           MOVE 2 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 4 TO N
+           MOVE 1 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 5 TO N
+           MOVE 3 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 6 TO N
+           MOVE 2 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 7 TO N
+           MOVE 3 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 8 TO N
+           MOVE 1 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 9 TO N
+           MOVE 4 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 10 TO N
+           MOVE 3 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 11 TO N
+           MOVE 5 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 12 TO N
+           MOVE 2 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 13 TO N
+           MOVE 5 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 14 TO N
+           MOVE 3 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 15 TO N
+           MOVE 4 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 16 TO N
+           MOVE 1 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 17 TO N
+           MOVE 5 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 18 TO N
+           MOVE 4 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 19 TO N
+           MOVE 7 TO EXPECTED
+           PERFORM DOTEST
+           MOVE 20 TO N
+           MOVE 3 TO EXPECTED
+           PERFORM DOTEST
+
+           TESTSUITE 'Random Tests'.
+           PERFORM SET-RANDOM-SEED
+           PERFORM 40 TIMES
+               COMPUTE N = 1 + 200 * FUNCTION RANDOM
+               MOVE N TO M
+               call 'FUSC-TEST'
+                    using by content m
+                    by reference expected
+               PERFORM DOTEST
+           END-PERFORM
+
+           END TESTS.
+      
+       DOTEST.
+           MOVE N TO N-DISP
+           TESTCASE 'Testing: N = ' FUNCTION TRIM(N-DISP).
+           INITIALIZE RESULT
+           CALL 'FUSC' USING BY CONTENT N BY REFERENCE RESULT
+           EXPECT RESULT TO BE EXPECTED.
+           .
+      
+       END PROGRAM TESTS.
+      
+       PROGRAM-ID. FUSC-TEST RECURSIVE.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 A         PIC 9(8).
+       01 B         PIC 9(8).
+       01 TMP       PIC 9(8).
+       LINKAGE SECTION.
+       01 N           PIC 9(8).
+       01 RESULT      PIC 9(8).
+       PROCEDURE DIVISION USING N RESULT.
+           evaluate true
+              when n < 2
+                move n to result
+              when function rem(n, 2) = 1
+                compute a = (n - 1) / 2
+                compute b = (n - 1) / 2 + 1
+                call 'FUSC-TEST' using 
+                  by content a by reference result
+                move result to tmp
+                call 'FUSC-TEST' using
+                  by content a by reference result
+                compute result = tmp + result
+              when other
+                compute a = n / 2
+                call 'FUSC-TEST' using 
+                  by content a by reference result
+           End-evaluate 
+
+           GOBACK.
+       END PROGRAM FUSC-TEST.
+
+       
