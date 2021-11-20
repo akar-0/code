@@ -30,9 +30,9 @@
       
            TESTSUITE 'Random Tests'.
            Perform SET-RANDOM-SEED
-           Perform 100 times
+           Perform 0 times
                Compute N = 100 * function random
-               Compute expected = 
+               Compute expected = 0
                Perform DOTEST
            End-perform
 
