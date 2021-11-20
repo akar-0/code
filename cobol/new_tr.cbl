@@ -7,9 +7,9 @@
        01 RESULT      PIC 9(20).
        PROCEDURE DIVISION USING N RESULT.
       
-           COMPUTE RESULT =
+           Compute result = ,
       
-           GOBACK.
+           Goback.
        END PROGRAM NAME.
       
       * tests
@@ -23,26 +23,28 @@
        01 N-DISP      PIC Z(19)9.
        PROCEDURE DIVISION.
            TESTSUITE 'Fixed Tests'.
-           MOVE 0 TO N
-           MOVE 0 TO EXPECTED
-           PERFORM DOTEST
+           Move 0 to n,
+           Move 0 to expected,
+           Perform DOTEST
       
       
            TESTSUITE 'Random Tests'.
-           PERFORM SET-RANDOM-SEED
-           PERFORM 100 TIMES
-               COMPUTE N = 100 * FUNCTION RANDOM
-               COMPUTE EXPECTED = 
-               PERFORM DOTEST
-           END-PERFORM
+           Perform SET-RANDOM-SEED
+           Perform 100 times
+               Compute N = 100 * function random
+               Compute expected = 
+               Perform DOTEST
+           End-perform
 
            END TESTS.
       
        DOTEST.
-           MOVE N TO N-DISP
-           TESTCASE 'Testing: N = ' FUNCTION TRIM(N-DISP).
-           INITIALIZE RESULT
-           CALL 'NAME' USING BY CONTENT N BY REFERENCE RESULT
-           EXPECT RESULT TO BE EXPECTED.
+           Move n to n-disp
+           TESTCASE 'Testing: N = ' function trim(n-disp).
+           Initialize result
+           Call 'NAME'
+               using by content n
+               by reference result
+           Expect result to be expected.
            .
        END PROGRAM TESTS.
