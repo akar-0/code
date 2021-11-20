@@ -7,9 +7,9 @@
        01 RESULT      PIC 9(20).
        PROCEDURE DIVISION USING N RESULT.
       
-           Compute result = ,
+          Compute result = ,
       
-           Goback.
+          Goback.
        END PROGRAM NAME.
       
       * tests
