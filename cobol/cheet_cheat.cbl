@@ -33,3 +33,12 @@ end-if
       
       
 PIC -(1)9. can hold one digit only. In general, PIC -(n)9. can hold n digits only. The extra symbol is reserved for the sign.
+      
+      
+      
+usage comp-5 corresponds to native integers
+(that is, 64-bit integers on 64-bit machines).
+You may declare all integer variables as usage comp-5 and get a noticeable performance improvement.
+But GnuCOBOL does not perform computations directly with native integers.
+It converts them to GMP decimals, performs computations, and the converts GMP decimals back to native integers.
+That's why GnuCOBOL is slow even with usage comp-5.
