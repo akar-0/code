@@ -1,52 +1,56 @@
-      * solution
-       IDENTIFICATION DIVISION.
-       PROGRAM-ID. NAME.
-       DATA DIVISION.
-       LINKAGE SECTION.
-       01 N           PIC 9(8).
-       01 RESULT      PIC 9(20).
-       PROCEDURE DIVISION USING N RESULT.
+See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10007d59487
+
+* solution
+       identification division.
+       program-id. name.
+
+       data division.
+       linkage section.
+       01 n           PIC 9(8).
+       01 result      PIC 9(20).
+       procedure division using n result.
       
-          Compute result = ,
+          compute result = ,
       
-          Goback.
-       END PROGRAM NAME.
+          goback.
+       end program NAME.
       
       * tests
-       IDENTIFICATION DIVISION.
-       PROGRAM-ID. TESTS.
-       DATA DIVISION.
-       WORKING-STORAGE SECTION.
-       01 N           PIC 9(8).
-       01 RESULT      PIC 9(20).
-       01 EXPECTED    PIC 9(20).
-       01 N-DISP      PIC Z(19)9.
-       PROCEDURE DIVISION.
-           TESTSUITE 'Fixed Tests'.
-           Move 0 to n,
-           Move 0 to expected,
-           Perform DOTEST
-      
-      
-           TESTSUITE 'Random Tests'.
-           Perform SET-RANDOM-SEED
-           Perform 0 times
-               Compute N = 100 * function random
-               Compute expected = 0
-               Perform DOTEST
-           End-perform
+       identification division.
+       program-id. tests.
 
-           END TESTS.
+       data division.
+       working-storage section.
+       01 n           PIC 9(8).
+       01 result      PIC 9(20).
+       01 expected    PIC 9(20).
+       01 n-disp      PIC Z(19)9.
+       procedure division.
+           testsuite 'Fixed Tests'.
+           move 0 to n
+           move 0 to expected
+           perform dotest
       
-       DOTEST.
-           Move n to n-disp
-           TESTCASE 'Testing: N = ' function trim(n-disp).
-           Initialize result
-           Call 'NAME'
+      
+           testsuite 'Random Tests'.
+           perform set-random-seed
+           perform 0 times
+               compute N = 100 * function random
+               compute expected = 0
+               perform dotest
+           end-perform
+
+           end tests.
+      
+       dotest.
+           move n to n-disp
+           testcase 'Testing: N = ' function trim(n-disp).
+           initialize result
+           call 'NAME'
                using by content n
                by reference result
-           Expect result to be expected.
+           expect result to be expected.
            .
-       END PROGRAM TESTS.
+       end program tests.
       
       
