@@ -5,6 +5,8 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
        program-id. name.
 
        data division.
+       local-storage section.
+       ...
        linkage section.
        01 n           PIC 9(8).
        01 result      PIC 9(20).
