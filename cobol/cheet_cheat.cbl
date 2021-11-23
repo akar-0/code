@@ -54,3 +54,7 @@ That's why GnuCOBOL is slow even with usage comp-5.
          ...
        01 xs redefines arr.
          05 num pic 9(8) occurs 18 times indexed by inx-a.
+
+      
+      
+            array binary search https://www.codewars.com/kata/reviews/619d52279e40e60001b88738/groups/619d56566d2c6a0001d71c85
