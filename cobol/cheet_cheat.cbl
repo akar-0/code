@@ -14,7 +14,10 @@
 // https://www.codewars.com/kata/reviews/618538caf715af0001a90c2a/groups/618570cf510b09000193610d
 
       ceil
-
+types:
+      9: digits
+      a: alphabetic
+      x: alnum
 Monadius:
       
       compute x rounded mode toward-greater = 
