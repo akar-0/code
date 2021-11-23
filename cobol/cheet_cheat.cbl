@@ -45,3 +45,12 @@ You may declare all integer variables as usage comp-5 and get a noticeable perfo
 But GnuCOBOL does not perform computations directly with native integers.
 It converts them to GMP decimals, performs computations, and the converts GMP decimals back to native integers.
 That's why GnuCOBOL is slow even with usage comp-5.
+      
+      
+      
+      arrays
+       01 arr.
+         05 pic 9(8) value 1.
+         ...
+       01 xs redefines arr.
+         05 num pic 9(8) occurs 18 times indexed by inx-a.
