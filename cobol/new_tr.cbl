@@ -8,8 +8,8 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
        local-storage section.
        ...
        linkage section.
-       01 n           PIC 9(8).
-       01 result      PIC 9(20).
+       01 n           pic 9(8).
+       01 result      pic 9(20).
        procedure division using n result.
       
           compute result = ,
@@ -23,10 +23,10 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
 
        data division.
        working-storage section.
-       01 n           PIC 9(8).
-       01 result      PIC 9(20).
-       01 expected    PIC 9(20).
-       01 n-disp      PIC Z(19)9.
+       01 n           pic 9(8).
+       01 result      pic 9(20).
+       01 expected    pic 9(20).
+       01 n-disp      pic Z(19)9.
        procedure division.
            testsuite 'Fixed Tests'.
            move 0 to n
