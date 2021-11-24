@@ -37,7 +37,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
            testsuite 'Random Tests'.
            perform set-random-seed
            perform 0 times
-               compute N = 100 * function random
+               compute n = 100 * function random
                compute expected = 0
                perform dotest
            end-perform
