@@ -58,3 +58,7 @@ That's why GnuCOBOL is slow even with usage comp-5.
       
       
             array binary search https://www.codewars.com/kata/reviews/619d52279e40e60001b88738/groups/619d56566d2c6a0001d71c85
+
+      
+      char ord - string
+      https://www.codewars.com/kata/565b9d6f8139573819000056/solutions/cobol
