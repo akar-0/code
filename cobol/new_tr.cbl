@@ -46,7 +46,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
       
        dotest.
            move n to n-disp
-           testcase 'Testing: N = ' function trim(n-disp).
+           testcase 'Testing: n = ' function trim(n-disp).
            initialize result
            call 'NAME'
                using by content n
