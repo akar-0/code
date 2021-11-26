@@ -4,6 +4,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
        identification division.
        program-id. name.
 
+      
        data division.
        local-storage section.
        ...
@@ -21,6 +22,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
        identification division.
        program-id. tests.
 
+      
        data division.
        working-storage section.
        01 n           pic 9(8).
