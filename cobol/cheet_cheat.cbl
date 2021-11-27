@@ -57,6 +57,9 @@ That's why GnuCOBOL is slow even with usage comp-5.
 
       
       
+bitwise ops
+      CBL_AND, CBL_OR, CLB_XOR, CLB_NOT, CBL_NIMP, CBL_NOR, CBL_IMP, CBL_EQ.
+      
             array binary search https://www.codewars.com/kata/reviews/619d52279e40e60001b88738/groups/619d56566d2c6a0001d71c85
 
       
