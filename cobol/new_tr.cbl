@@ -4,7 +4,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
        identification division.
        program-id. name.
 
-      
+
        data division.
        local-storage section.
        ...
@@ -12,17 +12,17 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
        01 n           pic 9(8).
        01 result      pic 9(20).
        procedure division using n result.
-      
+
           compute result = ,
-      
+
           goback.
        end program NAME.
-      
+
       * tests
        identification division.
        program-id. tests.
 
-      
+
        data division.
        working-storage section.
        01 n           pic 9(8).
@@ -34,8 +34,8 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
            move 0 to n
            move 0 to expected
            perform dotest
-      
-      
+
+
            testsuite 'Random Tests'.
            perform set-random-seed
            perform 0 times
@@ -45,7 +45,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
            end-perform
 
            end tests.
-      
+
        dotest.
            move n to n-disp
            testcase 'Testing: n = ' function trim(n-disp).
@@ -56,5 +56,4 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
            expect result to be expected.
            .
        end program tests.
-      
-      
+
