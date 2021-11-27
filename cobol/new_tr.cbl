@@ -37,6 +37,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
 
 
 
+
            testsuite 'Random Tests'.
            perform set-random-seed
            perform 0 times
@@ -46,6 +47,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
            end-perform
 
            end tests.
+
 
 
        dotest.
