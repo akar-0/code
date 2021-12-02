@@ -1,0 +1,18 @@
+            dotest.
+               move n to n-disp
+               testcase 'Testing: n = ' function trim(n-disp).
+               initialize result
+               call 'fun' using by content n by reference result
+               if result = expected
+                  move 'test passed' to assertion-message
+                  perform assert-true
+               else
+                  initialize assertion-message
+                  string 'Incorrect value for n = 'function trim(n-disp)
+                    into assertion-message
+                  perform assert-false
+                  perform end-test-group
+                  goback
+               end-if
+               .
+      
