@@ -1,4 +1,5 @@
-            dotest.
+      * abort
+               dotest.
                move n to n-disp
                testcase 'Testing: n = ' function trim(n-disp).
                initialize result
@@ -16,3 +17,13 @@
                end-if
                .
       
+      * personalized message
+               initialize assertion-message
+               if result = expected
+                   perform assert-true
+               else
+                   string {your message here}
+                     into assertion-message
+                   perform assert-false
+               end-if
+
