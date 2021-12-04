@@ -33,7 +33,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
            move 0 to expected
            perform dotest
       
-           testsuite 'Random Tests'.
+           testsuite 'Random tests'.
            perform set-random-seed
            perform 0 times
                compute n = 100 * function random
