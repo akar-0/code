@@ -28,7 +28,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
        01 expected    pic 9(20).
        01 n-disp      pic z(19)9.
        procedure division.
-           testsuite 'Fixed Tests'.
+           testsuite 'Fixed tests'.
            move 0 to n
            move 0 to expected
            perform dotest
