@@ -101,9 +101,10 @@
            .
 
        generate-random-array.
-           compute arr-length = function random * 11
+           compute arr-length = min-length + 
+                       function random * (max-length - min-length + 1)
            perform varying i from 1 by 1 until i > arr-length
-               compute xs(i) = min + function random * (max - min)
+               compute xs(i) = min + function random * (max - min + 1)
            end-perform
            .
       
