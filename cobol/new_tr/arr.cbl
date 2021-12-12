@@ -99,7 +99,7 @@
            end-perform
            display ']'
            .
-
+       
        generate-random-array.
            compute arr-length = min-length + 
                        function random * (max-length - min-length + 1)
