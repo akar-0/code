@@ -37,7 +37,7 @@
        01  j              pic 99.
        01  x-str          pic x(10).
        01  x-delim        pic x.
-       01  a-disp         pic z(9)9.
+       01  l-disp         pic z(9)9.
        01  fixed-test     pic x(100).
        01  n-disp         pic z(19)9.
       
@@ -75,8 +75,8 @@
            .
       
        dotest.
-           move arr-length to a-disp
-           testcase 'Testing arr-length = ' function trim(a-disp).
+           move arr-length to l-disp
+           testcase 'Testing arr-length = ' function trim(l-disp).
            
            initialize result
            call 'NAME' using 
