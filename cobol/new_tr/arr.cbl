@@ -2,10 +2,8 @@
        program-id. NAME.
 
        data division.
-       working-storage section.
-       01  i               pic 9(2).
-       01  x               pic 9(12).
-       01  base            pic 9(12).
+       linking-storage section.
+       ...
 
       
        linkage section.
