@@ -2,7 +2,7 @@
        program-id. NAME.
 
        data division.
-       linking-storage section.
+       local-storage section.
        ...
 
       
