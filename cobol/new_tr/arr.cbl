@@ -36,13 +36,6 @@
        01  x-str          pic x(10).
        01  x-delim        pic x.
        01  a-disp         pic z(9)9.
-       01  arr.
-           05 arr-length  pic 9(3).
-           05 xs          pic 9 occurs 0 to 100 times 
-                                depending on arr-length
-                                indexed by i.
-       01  result         pic 9(8).
-       01  expected       pic 9(8).
        01  fixed-test     pic x(100).
        01  n-disp         pic z(19)9.
       
