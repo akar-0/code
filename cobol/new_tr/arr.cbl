@@ -91,8 +91,8 @@
        display-array.
            display 'xs = [' no advancing
            perform varying i from 1 by 1 until i > arr-length
-               move xs(i) to a-disp
-               display function trim(a-disp) no advancing
+               move xs(i) to n-disp
+               display function trim(n-disp) no advancing
                if i < arr-length
                    display ', ' no advancing
                end-if
