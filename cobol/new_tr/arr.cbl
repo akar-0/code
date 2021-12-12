@@ -30,8 +30,10 @@
       
        data division.
        working-storage section.
-       01  min            pic 9(8).
-       01  max            pic 9(8).
+       01  min-val        pic 9(8).
+       01  max-val        pic 9(8).
+       01  min-length     pic 9(3).
+       01  max-length     pic 9(3).
        01  j              pic 99.
        01  x-str          pic x(10).
        01  x-delim        pic x.
