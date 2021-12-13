@@ -110,3 +110,21 @@
       
        end program tests.
       
+
+      
+      
+      
+       string-to-arr.
+           move 1 to i
+           move 0 to arr-length
+           perform with test after until x-delim = space
+               unstring fixed-test 
+                   delimited by ',' or space 
+                   into x-str delimiter in x-delim
+                   with pointer i
+               add 1 to arr-length
+               compute xs(exp-length) = function numval(x-str)
+           end-perform
+      
+           perform dotest
+           .
