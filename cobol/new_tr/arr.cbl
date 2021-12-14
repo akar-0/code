@@ -128,3 +128,16 @@
       
            perform dotest
            .
+      
+      
+      
+       shuffle-array.
+           compute c = arr-length + 1
+           perform until c = 1
+                subtract 1 from c
+                compute i = 1 + function random * c
+                move xs(c) to n
+                move xs(i) to xs(c)
+                move n to xs(i)
+          end-perform
+          .
