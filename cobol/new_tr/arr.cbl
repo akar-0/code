@@ -52,7 +52,6 @@
            perform set-random-seed
            perform 0 times
                compute arr-length = 101 * function random
-               perform generate-random-array
                perform reference-solution
 
                perform dotest
@@ -100,13 +99,7 @@
            display ']'
            .
        
-       generate-random-array.
-           compute arr-length = min-length + 
-                       function random * (max-length - min-length + 1)
-           perform varying i from 1 by 1 until i > arr-length
-               compute xs(i) = min + function random * (max - min + 1)
-           end-perform
-           .
+
       
        end program tests.
       
@@ -141,3 +134,12 @@
                 move n to xs(i)
           end-perform
           .
+      
+      
+       generate-random-array.
+           compute arr-length = min-length + 
+                       function random * (max-length - min-length + 1)
+           perform varying i from 1 by 1 until i > arr-length
+               compute xs(i) = min + function random * (max - min + 1)
+           end-perform
+           .
