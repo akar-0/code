@@ -291,21 +291,20 @@
       
        data division.
        working-storage section.
-       01  x.
-           05 x-length     pic 99.
-           05 xs           pic 99 occurs 1 to 30 times 
-                                  depending on x-length.
-       01  t               pic 99.
+       01  arr.
+           05 arr-length     pic 99.
+           05 xs             pic 99 occurs 0 to 20 times 
+                                  depending on arr-length.
        01  result.
-           05 res-length   pic 99.
-           05 res          pic 99 occurs 1 to 30 times 
+           05 res-length     pic 99.
+           05 res            pic 99 occurs 0 to 20 times 
                                   depending on res-length.
        01  expected.
-           05 xp-length    pic 99.
-           05 xp           pic 99 occurs 1 to 30 times 
+           05 xp-length     pic 99.
+           05 xp             pic 99 occurs 0 to 20 times 
                                   depending on xp-length.
-       01  j               pic 9(3).
-       01  i               pic 9(3).
+       01  j               pic 9(2).
+       01  i               pic 9(2).
        01  check           pic 9.
        01  x-str           pic x(10).
        01  x-delim         pic x.
@@ -316,42 +315,29 @@
       
        procedure division.
            testsuite 'Fixed tests'.
-           move '' to fixed-test
-           move 7 to t
-           move '' to fixed-exp
+           move '2,4,5,6' to fixed-test
+           move '2,4,6' to fixed-exp
+           perform do-fixed-test
+
+           move ' ' to fixed-test
+           move ' ' to fixed-exp
            perform do-fixed-test
       
-      
-           testsuite 'Random tests'.
-           perform set-random-seed
-           perform 100 times
-               compute x-length = 1 + 30 * function random
-               perform varying i from 1 until i > x-length
-                    compute xs(i) = 1 + 10 * function random
-               end-perform
-               compute t = x-length * function random
-      
-               call 'reference-solution' using
-                    by content x t
-                    by reference expected
-      
-               perform dotest
-           end-perform
            end tests.
       
        do-fixed-test.
-      * parse x
-           if fixed-test = ' ' then move 0 to x-length
+      * parse input
+           if fixed-test = ' ' then move 0 to arr-length
            else
                move 1 to i
-               move 0 to x-length
+               move 0 to arr-length
                perform with test after until x-delim = space
                    unstring fixed-test 
                        delimited by ',' or space 
                        into x-str delimiter in x-delim
                        with pointer i
-                       add 1 to x-length
-                   compute xs(x-length) = function numval(x-str)
+                       add 1 to arr-length
+                   compute xs(arr-length) = function numval(x-str)
                    end-perform
            end-if
       * parse expected
@@ -376,8 +362,8 @@
            testcase 'Testing'.
            
            initialize result
-           call 'trouble' using 
-               by content x t
+           call 'getEvenNumbers' using 
+               by content arr
                by reference result
            move 1 to check
       
@@ -405,21 +391,18 @@
            .
 
        display-arrays.
-           if x-length = 0 then display 'x = [ ]' line-feed
+           if arr-length = 0 then display 'arr = [ ]' line-feed
            else
-               display 'x        = [' no advancing
-               perform varying i from 1 by 1 until i > x-length
+               display 'arr = [' no advancing
+               perform varying i from 1 by 1 until i > arr-length
                    move xs(i) to n-disp
                    display function trim(n-disp) no advancing
-                   if i < x-length
+                   if i < arr-length
                        display ', ' no advancing
                    end-if
                end-perform
                display ']' line-feed
            end-if
-      
-           move t to n-disp
-           display 't        = ' function trim(n-disp) line-feed
       
            if res-length = 0 then display 'actual   = [ ]' line-feed
            else
@@ -447,48 +430,6 @@
                display ']'
            end-if
            .
-      
-       identification division.
-       program-id. reference-solution.
-       data division.
-       working-storage section.
-       01  n               pic 99.
-       01  j               pic 99.
-      
-       linkage section.
-       01  x.
-           05 x-length     pic 99.
-           05 xs           pic 99 occurs 1 to 30 times 
-                                     depending on x-length.
-       01  t               pic 99.
-       01  result.
-           05 res-length   pic 99.
-           05 res          pic 99 occurs 1 to 30 times 
-                                     depending on res-length
-                                     indexed by i.
-      
-       procedure division using x t result.
-      
-           move 2 to n
-           perform until n > x-length
-              if  xs(n - 1) + xs(n) = t perform shrink
-              else                      add 1 to n end-if
-           end-perform
-      
-           move x-length to res-length
-           perform varying i from 1 until i > x-length 
-              move xs(i) to res(i)
-           end-perform
-           goback.
-      
-           shrink.
-              perform varying j from n until j >= x-length
-                  move xs(j + 1) to xs(j)
-              end-perform
-              subtract 1 from x-length
-              .
-      
-       end program reference-solution.
       
        end program tests.
    
