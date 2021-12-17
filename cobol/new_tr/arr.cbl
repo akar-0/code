@@ -24,6 +24,19 @@
       
       
       
+           testsuite 'Random tests'.
+           perform set-random-seed
+           perform 0 times
+              compute arr-length = 21 * function random
+              perform varying h from 1 until h > arr-length
+                  compute xs(h) = 100 * function random
+              end-perform
+              perform dotest
+      
+      
+      
+      
+      
       
        identification division.
        program-id. tests.
