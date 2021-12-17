@@ -315,8 +315,8 @@
       
        procedure division.
            testsuite 'Fixed tests'.
-           move '2,4,5,6' to fixed-test
-           move '2,4,6' to fixed-exp
+           move '' to fixed-test
+           move '' to fixed-exp
            perform do-fixed-test
 
            move ' ' to fixed-test
@@ -362,7 +362,7 @@
            testcase 'Testing'.
            
            initialize result
-           call 'getEvenNumbers' using 
+           call '' using 
                by content arr
                by reference result
            move 1 to check
