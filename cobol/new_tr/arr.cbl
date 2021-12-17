@@ -1,24 +1,24 @@
        identification division.
        program-id. NAME.
-
        data division.
-       local-storage section.
-       ...
-
       
        linkage section.
        01  arr.
-           05 arr-length   pic 9(3).
-           05 xs           pic 9(10) occurs 0 to 100 times 
-                                     depending on arr-length.
-       01  result          pic 9.
-
-       procedure division using arr result.
-
+           05 arr-length     pic 99.
+           05 xs             pic 99 occurs 0 to 20 times 
+                                  depending on arr-length.
+       01  result.
+           05 res-length     pic 99.
+           05 res            pic 99 occurs 0 to 20 times 
+                                  depending on res-length.
       
+       procedure division using arr result.
+      
+      * Your code here
       
            goback.
        end program NAME.
+      
       
       
       
