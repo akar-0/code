@@ -12,7 +12,8 @@
 // https://www.codewars.com/kata/5b0d67c1cb35dfa10b0022c7/solutions/cobol
 // exit perform
 // https://www.codewars.com/kata/reviews/618538caf715af0001a90c2a/groups/618570cf510b09000193610d
-
+// loop
+// https://zestedesavoir.com/tutoriels/685/la-programmation-cobol/739_les-bases-du-cobol/3403_les-boucles/#3-10670_boucle-avancee
       ceil
 types:
       9: digits
