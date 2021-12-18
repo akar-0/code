@@ -60,8 +60,6 @@
            testsuite 'Random tests'.
            perform set-random-seed
            perform 0 times
-               compute arr-length = 101 * function random
-               perform reference-solution
 
                perform dotest
            end-perform
