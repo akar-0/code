@@ -43,6 +43,7 @@
       
        data division.
        working-storage section.
+       01  i                 pic 99.
        01  j              pic 99.
        01  x-str          pic x(10).
        01  x-delim        pic x.
