@@ -44,12 +44,12 @@
        data division.
        working-storage section.
        01  i                 pic 99.
-       01  j              pic 99.
-       01  x-str          pic x(10).
-       01  x-delim        pic x.
-       01  l-disp         pic z(9)9.
-       01  fixed-test     pic x(100).
-       01  n-disp         pic z(19)9.
+       01  j                 pic 99.
+       01  x-str             pic x(10).
+       01  x-delim           pic x.
+       01  l-disp            pic z(9)9.
+       01  fixed-test        pic x(100).
+       01  n-disp            pic z(19)9.
       
        procedure division.
            testsuite 'Fixed tests'.
