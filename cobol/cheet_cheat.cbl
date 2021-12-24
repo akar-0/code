@@ -66,3 +66,9 @@ bitwise ops
       
       char ord - string
       https://www.codewars.com/kata/565b9d6f8139573819000056/solutions/cobol
+      
+      
+      
+~~~if:cobol
+blablablabla
+~~~
