@@ -67,17 +67,20 @@
            end tests.
 
        do-fixed-test.
-           move 1 to i
-           move 0 to arr-length
-           perform with test after until x-delim = space
-               unstring fixed-test 
-                   delimited by ',' or space 
-                   into x-str delimiter in x-delim
-                   with pointer i
-               add 1 to arr-length
-               compute xs(arr-length) = function numval(x-str)
-           end-perform
-      
+         if fixed-test = ' '
+              move 0 to arr-length
+         else
+              move 1 to i
+              move 0 to arr-length
+              perform with test after until x-delim = space
+                  unstring fixed-test 
+                      delimited by ',' or space 
+                      into x-str delimiter in x-delim
+                      with pointer i
+                  add 1 to arr-length
+                  compute xs(arr-length) = function numval(x-str)
+              end-perform
+           end-if
            perform dotest
            .
       
