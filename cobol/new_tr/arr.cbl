@@ -405,7 +405,7 @@
            .
 
        display-arrays.
-           if arr-length = 0 then display 'arr = [ ]' line-feed
+           if arr-length = 0 then display 'arr = [ ]'
            else
                display 'arr = [' no advancing
                perform varying i from 1 by 1 until i > arr-length
@@ -418,7 +418,7 @@
                display ']' line-feed
            end-if
       
-           if res-length = 0 then display 'actual   = [ ]' line-feed
+           if res-length = 0 then display 'actual   = [ ]'
            else
                display 'actual   = [' no advancing
                perform varying i from 1 by 1 until i > res-length
