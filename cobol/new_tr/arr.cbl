@@ -65,7 +65,7 @@
                perform dotest
            end-perform
            end tests.
-
+      
        do-fixed-test.
          if fixed-test = ' '
               move 0 to arr-length
