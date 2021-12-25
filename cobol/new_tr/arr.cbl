@@ -415,7 +415,7 @@
                        display ', ' no advancing
                    end-if
                end-perform
-               display ']' line-feed
+               display ']'
            end-if
       
            if res-length = 0 then display 'actual   = [ ]'
@@ -428,7 +428,7 @@
                        display ', ' no advancing
                    end-if
                end-perform
-               display ']' line-feed
+               display ']'
            end-if
       
            if xp-length = 0 then display 'expected = [ ]'
