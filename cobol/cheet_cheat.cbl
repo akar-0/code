@@ -72,3 +72,9 @@ bitwise ops
 ~~~if:cobol
 blablablabla
 ~~~
+~~~if-not:haskell
+```
+"ATTGC" --> "TAACG"
+"GTAT" --> "CATA"
+```
+~~~
