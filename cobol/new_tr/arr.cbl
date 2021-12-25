@@ -406,9 +406,9 @@
            .
 
        display-arrays.
-           if arr-length = 0 then display 'arr = [ ]'
+           if arr-length = 0 then display 'arr      = [ ]'
            else
-               display 'arr = [' no advancing
+               display 'arr      = [' no advancing
                perform varying i from 1 by 1 until i > arr-length
                    move xs(i) to n-disp
                    display function trim(n-disp) no advancing
