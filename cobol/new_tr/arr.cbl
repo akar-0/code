@@ -337,6 +337,17 @@
            move ' ' to fixed-exp
            perform do-fixed-test
       
+      
+      
+           testsuite 'Random tests'.
+           perform 100 times
+              compute arr-length = 100 * function random
+              perform varying i from 1 until i > arr-length
+                compute xs(i) = 100 * function random
+              end-perform
+              perform reference-solution
+              perform dotest
+            end-perform
            end tests.
       
        do-fixed-test.
