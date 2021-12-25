@@ -4,13 +4,13 @@
       
        linkage section.
        01  arr.
-           05 arr-length     pic 99.
-           05 xs             pic 99 occurs 0 to 20 times 
-                                  depending on arr-length.
+           05 arr-length     pic 9(2).
+           05 xs             pic 9(2) occurs 0 to 20 times 
+                                      depending on arr-length.
        01  result.
-           05 res-length     pic 99.
-           05 res            pic 99 occurs 0 to 20 times 
-                                  depending on res-length.
+           05 res-length     pic 9(2).
+           05 res            pic 9(2) occurs 0 to 20 times 
+                                     depending on res-length.
       
        procedure division using arr result.
       
@@ -43,8 +43,8 @@
       
        data division.
        working-storage section.
-       01  i                 pic 99.
-       01  j                 pic 99.
+       01  i                 pic 9(2).
+       01  j                 pic 9(2).
        01  x-str             pic x(10).
        01  x-delim           pic x.
        01  l-disp            pic z(9)9.
@@ -179,8 +179,8 @@
            05 xp-length         pic 9(2).
            05 xp                pic 9(2)  occurs 5 to 30 times
                                       depending on xp-length.
-       01  j                    pic 99.
-       01  i                    pic 99.
+       01  j                    pic 9(2).
+       01  i                    pic 9(2).
        01  check                pic 9.
        01  x-str                pic x(10).
        01  x-delim              pic x.
@@ -306,16 +306,16 @@
        data division.
        working-storage section.
        01  arr.
-           05 arr-length     pic 99.
-           05 xs             pic 99 occurs 0 to 20 times 
+           05 arr-length     pic 9(2).
+           05 xs             pic 9(2) occurs 0 to 20 times 
                                   depending on arr-length.
        01  result.
-           05 res-length     pic 99.
-           05 res            pic 99 occurs 0 to 20 times 
+           05 res-length     pic 9(2).
+           05 res            pic 9(2) occurs 0 to 20 times 
                                   depending on res-length.
        01  expected.
-           05 xp-length     pic 99.
-           05 xp             pic 99 occurs 0 to 20 times 
+           05 xp-length     pic 9(2).
+           05 xp            pic 9(2) occurs 0 to 20 times 
                                   depending on xp-length.
        01  j               pic 9(2).
        01  i               pic 9(2).
