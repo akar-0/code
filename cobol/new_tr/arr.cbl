@@ -103,7 +103,6 @@
               display 'xs = [ ]'
            else
              display 'xs = [' no advancing
-             perform varying i from 1 by 1 until i > arr-length
                  move xs(i) to n-disp
                  display function trim(n-disp) no advancing
                  if i < arr-length
@@ -153,7 +152,7 @@
        generate-random-array.
            compute arr-length = min-length + 
                        function random * (max-length - min-length + 1)
-           perform varying i from 1 by 1 until i > arr-length
+           perform varying i from 1 until i > arr-length
                compute xs(i) = min + function random * (max - min + 1)
            end-perform
            .
@@ -279,7 +278,7 @@
       
        display-input.
            display 'xs = [' no advancing
-           perform varying i from 1 by 1 until i > items-length
+           perform varying i from 1 until i > items-length
                move xs(i) to n-disp
                display function trim(n-disp) no advancing
                if i < items-length
@@ -420,7 +419,7 @@
            if arr-length = 0 then display 'arr      = [ ]'
            else
                display 'arr      = [' no advancing
-               perform varying i from 1 by 1 until i > arr-length
+               perform varying i from 1 until i > arr-length
                    move xs(i) to n-disp
                    display function trim(n-disp) no advancing
                    if i < arr-length
@@ -433,7 +432,7 @@
            if res-length = 0 then display 'actual   = [ ]'
            else
                display 'actual   = [' no advancing
-               perform varying i from 1 by 1 until i > res-length
+               perform varying i from 1 until i > res-length
                    move res(i) to n-disp
                    display function trim(n-disp) no advancing
                    if i < res-length
@@ -446,7 +445,7 @@
            if xp-length = 0 then display 'expected = [ ]'
            else
                display 'expected = [' no advancing
-               perform varying i from 1 by 1 until i > xp-length
+               perform varying i from 1 until i > xp-length
                    move xp(i) to n-disp
                    display function trim(n-disp) no advancing
                    if i < xp-length
@@ -470,7 +469,7 @@
               display 'Array too big to be displayed'
            when other
              display 'xs = [' no advancing
-             perform varying i from 1 by 1 until i > arr-length
+             perform varying i from 1 until i > arr-length
                  move xs(i) to n-disp
                  display function trim(n-disp) no advancing
                  if i < arr-length
