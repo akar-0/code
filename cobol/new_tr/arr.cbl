@@ -459,3 +459,24 @@
       
        end program tests.
    
+
+      
+      * display big arrays
+       display-array.
+           evaluate arr-length
+           when 0
+              display 'xs = [ ]'
+           when > 100
+              display 'Array too big to be displayed'
+           when other
+             display 'xs = [' no advancing
+             perform varying i from 1 by 1 until i > arr-length
+                 move xs(i) to n-disp
+                 display function trim(n-disp) no advancing
+                 if i < arr-length
+                     display ', ' no advancing
+                 end-if
+             end-perform
+             display ']'
+           end-evaluate
+           .
