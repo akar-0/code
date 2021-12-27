@@ -67,9 +67,8 @@
            end tests.
       
        do-fixed-test.
-         if fixed-test = ' '
-              move 0 to arr-length
-         else
+          move 0 to arr-length
+          if fixed-test <> ' '
               move 1 to i
               move 0 to arr-length
               perform with test after until x-delim = space
