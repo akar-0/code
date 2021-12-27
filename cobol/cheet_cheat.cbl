@@ -68,6 +68,7 @@ bitwise ops
       https://www.codewars.com/kata/565b9d6f8139573819000056/solutions/cobol
       
       
+~~~if:cobol,python
       
 ~~~if:cobol
 blablablabla
