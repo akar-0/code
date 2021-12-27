@@ -477,3 +477,8 @@
              display ']'
            end-evaluate
            .
+
+      
+      
+      pairs
+      https://www.codewars.com/kumite/61c64fd30fb2fe0056398526?sel=61c64fd30fb2fe0056398526
