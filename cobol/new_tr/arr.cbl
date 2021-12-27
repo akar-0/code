@@ -350,9 +350,8 @@
            end tests.
       
        do-fixed-test.
-      * parse input
-           if fixed-test = ' ' then move 0 to arr-length
-           else
+           move 0 to xp-length, arr-length
+           if fixed-test <> ' '
                move 1 to i
                move 0 to arr-length
                perform with test after until x-delim = space
@@ -364,9 +363,8 @@
                    compute xs(arr-length) = function numval(x-str)
                    end-perform
            end-if
-      * parse expected
-           if fixed-exp = ' ' then move 0 to xp-length
-           else
+
+           if fixed-exp <> ' ' 
                move 1 to i
                move 0 to xp-length
                perform with test after until x-delim = space
