@@ -67,6 +67,8 @@ bitwise ops
       char ord - string
       https://www.codewars.com/kata/565b9d6f8139573819000056/solutions/cobol
       
+      https://docs.codewars.com/references/markdown/extensions/#details-1
+      
       
 ~~~if:cobol,python
       
