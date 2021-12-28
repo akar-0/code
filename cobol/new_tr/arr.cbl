@@ -138,13 +138,11 @@
       
       
        shuffle-array.
-           compute c = arr-length + 1
-           perform until c = 1
-                subtract 1 from c
-                compute i = 1 + function random * c
-                move xs(c) to n
-                move xs(i) to xs(c)
-                move n to xs(i)
+         perform varying i from function abs(arr-length + 1) by -1 until i = 0
+           compute j = 1 + function random * i
+           move xs(i) to n
+           move xs(j) to xs(i)
+           move n to xs(j)
           end-perform
           .
       
