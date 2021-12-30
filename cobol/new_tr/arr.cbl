@@ -138,7 +138,7 @@
       
       
        shuffle-array.
-         perform varying i from function abs(arr-length + 1) by -1 until i = 0
+         perform varying i from arr-length by -1 until i = 0
            compute j = 1 + function random * i
            move xs(i) to n
            move xs(j) to xs(i)
