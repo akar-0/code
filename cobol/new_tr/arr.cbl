@@ -337,6 +337,7 @@
       
       
            testsuite 'Random tests'.
+           perform set-random-seed
            perform 100 times
               compute arr-length = 100 * function random
               perform varying i from 1 until i > arr-length
