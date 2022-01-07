@@ -54,7 +54,6 @@
       * write sanitized BF code to `prog`
           perform varying h from 1 until h > code-length
               evaluate it(h)
-              when '^'
               when '<'
               when '>'
               when '+'
