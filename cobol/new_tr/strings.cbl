@@ -29,17 +29,19 @@
        data division.
        working-storage section.
        01  s.
-           05 s-length     pic 9(2).
-           05 s-char       pic x occurs 0 to 30 times 
-                           depending on arr-length.
+           05  s-length      pic 9(2).
+           05  s-chars.
+               07 s-char     pic x occurs 0 to 30 times 
+                             depending on s-length.
        01  result.
-           05 res-length   pic 9(2).
-           05 res          pic x occurs 0 to 30 times 
-                           depending on res-length.
+           05  res-length    pic 9(2).
+           05  res-chars.
+              07 res         pic x occurs 0 to 30 times 
+                             depending on res-length.
        01  expected.
-           05 xp-length      pic 9(2).
-           05 e-chars.
-              07 xp          pic x occurs 0 to 30 times 
+           05  xp-length     pic 9(2).
+           05  e-chars.
+              07  xp         pic x occurs 0 to 30 times 
                              depending on xp-length.
        01  i usage index.
        01  j usage index.
