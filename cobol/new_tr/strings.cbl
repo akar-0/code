@@ -30,6 +30,7 @@
       
        data division.
        working-storage section.
+       01  c pic x.
        01  s.
            05  s-length      pic 9(2).
            05  s-chars.
@@ -66,6 +67,9 @@
               compute s-length = 100 * function random
               move 0 to xp-length
               perform varying i from 1 until i > s-length
+                move function char(33 + function integer
+                                  (95 * function random))
+                     to c
               end-perform
               perform dotest
             end-perform
