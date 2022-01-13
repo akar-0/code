@@ -1,6 +1,8 @@
        identification division.
        program-id. NAME.
        data division.
+       local-storage section.
+       ...
       
        linkage section.
        01  s.
