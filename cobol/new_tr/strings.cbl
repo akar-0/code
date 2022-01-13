@@ -76,7 +76,7 @@
              move s-length to r-disp
              testcase 'Testing string of length ' function trim(r-disp).
             else 
-             testcase 'Testing s = "' function trim(s-chars) '"'.
+             testcase 'Testing s = "' s-chars '"'.
             end-if
            
            initialize result
