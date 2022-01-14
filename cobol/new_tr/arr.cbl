@@ -352,7 +352,6 @@
            move 0 to xp-length, arr-length
            if fixed-test <> ' '
                move 1 to i
-               move 0 to arr-length
                perform with test after until x-delim = space
                    unstring fixed-test 
                        delimited by ',' or space 
@@ -365,7 +364,6 @@
 
            if fixed-exp <> ' ' 
                move 1 to i
-               move 0 to xp-length
                perform with test after until x-delim = space
                    unstring fixed-exp 
                        delimited by ',' or space 
