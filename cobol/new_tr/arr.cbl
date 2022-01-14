@@ -314,8 +314,8 @@
            05 xp-length     pic 9(2).
            05 xp            pic 9(2) occurs 0 to 20 times 
                                   depending on xp-length.
-       01  j               pic 9(2).
-       01  i               pic 9(2).
+       01  j                usage index.
+       01  i                usage index.
        01  check           pic 9.
        01  x-str           pic x(10).
        01  x-delim         pic x.
