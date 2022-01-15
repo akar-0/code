@@ -43,8 +43,8 @@
       
        data division.
        working-storage section.
-       01  i                 pic 9(2).
-       01  j                 pic 9(2).
+       01  i                 usage index.
+       01  j                 usage index.
        01  x-str             pic x(10).
        01  x-delim           pic x.
        01  l-disp            pic z(9)9.
