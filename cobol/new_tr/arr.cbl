@@ -316,13 +316,13 @@
                                   depending on xp-length.
        01  j                usage index.
        01  i                usage index.
-       01  check           pic 9.
-       01  x-str           pic x(10).
-       01  x-delim         pic x.
-       01  l-disp          pic z(2)9.
-       01  fixed-test      pic x(100).
-       01  fixed-exp       pic x(100).
-       01  n-disp          pic z(10)9.
+       01  check            pic 9.
+       01  x-str            pic x(10).
+       01  x-delim          pic x.
+       01  l-disp           pic z(2)9.
+       01  fixed-test       pic x(100).
+       01  fixed-exp        pic x(100).
+       01  n-disp           pic z(10)9.
       
        procedure division.
            testsuite 'Fixed tests'.
