@@ -342,7 +342,7 @@
               perform varying i from 1 until i > arr-length
                 compute xs(i) = 100 * function random
               end-perform
-              perform reference-solution
+              perform referenceSolution
               perform dotest
             end-perform
            end tests.
@@ -449,6 +449,10 @@
                display ']'
            end-if
            .
+      
+       referenceSolution. 
+      
+          .
       
        end program tests.
    
