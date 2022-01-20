@@ -388,7 +388,12 @@
       
            if res-length <> xp-length
                 move 0 to check
-                display 'Incorrect length of result' line-feed
+                move res-length to l-disp
+                move xp-length to n-disp
+                string 'Incorrect length of result' line-feed
+                       'Expected: ' function trim(n-disp)
+                       ', Actual: ' function trim(l-disp)
+                into assertion message
            else
                 perform varying i from 1 until i > xp-length
                     if res(i) <> xp(i)
