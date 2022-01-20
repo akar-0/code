@@ -14,7 +14,7 @@
       
        procedure division using arr result.
       
-      * Your code here
+          initialize result
       
           goback.
        end program NAME.
