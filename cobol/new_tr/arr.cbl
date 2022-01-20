@@ -399,7 +399,7 @@
                 perform varying i from 1 until i > xp-length
                     if res(i) <> xp(i)
                       move 0 to check
-                      string 'Result is incorrect'
+                      string 'Incorrect result'
                       into assertion-message
                     end-if
                 end-perform
