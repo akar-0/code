@@ -86,7 +86,6 @@
            move arr-length to l-disp
            testcase 'Testing arr-length = ' function trim(l-disp).
            
-           initialize result
            call 'NAME' using 
                by content arr
                by reference result
@@ -236,7 +235,6 @@
        dotest.
            testcase 'Testing'.
            
-           initialize result
            call 'InverseSlice' using 
                by content items a b
                by reference result
