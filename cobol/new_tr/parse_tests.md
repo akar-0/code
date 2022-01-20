@@ -56,7 +56,7 @@ print('\n'.join(L))
 
 ```
 
-The previous code matches with COBOL declaration similar to the following:
+The previous code matches with COBOL declaration similar to the following (see kata "Flatten and sort an array"):
 ```cobol
        01  arr.
            05 arr-length     pic 9(2).
