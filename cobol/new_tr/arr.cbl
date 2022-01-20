@@ -386,6 +386,7 @@
                by reference result
            move 1 to check
       
+           initialize assertion-message
            if res-length <> xp-length
                 move 0 to check
                 move res-length to l-disp
@@ -393,19 +394,17 @@
                 string 'Incorrect length of result' line-feed
                        'Expected: ' function trim(n-disp)
                        ', Actual: ' function trim(l-disp)
-                into assertion message
+                into assertion-message
            else
                 perform varying i from 1 until i > xp-length
                     if res(i) <> xp(i)
                       move 0 to check
-                      display 'Result is incorrect' line-feed
-                      exit perform
+                      string 'Result is incorrect'
+                      into assertion-message
                     end-if
                 end-perform
            end-if
-      
-           initialize assertion-message
-      
+            
            if check = 0 
                 perform display-arrays
                 perform assert-false
