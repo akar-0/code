@@ -74,3 +74,25 @@ The previous code matches with COBOL declaration similar to the following (see k
                                   depending on xp-length.
 
 ```
+
+* Convert Python list to COBOL table:
+
+```python
+e=[]
+a='           '
+L=[f"{a}move {len(e)} to arr-length"]
+
+for i,s in enumerate(e,1):
+    L.append(f"{a}move '{str(s)}' to xs({i})")
+
+
+L.append(f"{a}perform dotest\n")
+print('\n'.join(L))
+
+```
+COBOL declaration:
+```cobol
+       01  arr.
+           05 arr-length     pic 9(2).
+           05 xs pic 9(2) occurs 0 to 99 times depending on arr1-length indexed i.
+```
