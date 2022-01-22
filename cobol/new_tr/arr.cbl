@@ -378,7 +378,6 @@
            move arr-length to l-disp
            testcase 'Testing arr-length = ' function trim(l-disp).
            
-           initialize result
            call '' using 
                by content arr
                by reference result
