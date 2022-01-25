@@ -68,7 +68,7 @@
               perform varying i from 1 until i > s-length
                 move function char(33 + function integer
                                   (95 * function random))
-                     to c
+                     to s-char(i)
               end-perform
               perform dotest
             end-perform
