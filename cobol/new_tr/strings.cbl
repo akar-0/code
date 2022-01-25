@@ -16,7 +16,7 @@
       
        procedure division using s result.
       
-      * Your code here
+          initialize result
       
           goback.
        end program NAME.
@@ -83,7 +83,6 @@
              testcase 'Testing s = "' s-chars '"'.
             end-if
            
-           initialize result
            call 'NAME' using 
                by content s
                by reference result
