@@ -30,7 +30,6 @@
       
        data division.
        working-storage section.
-       01  c pic x.
        01  s.
            05  s-length      pic 9(2).
            05  s-chars.
