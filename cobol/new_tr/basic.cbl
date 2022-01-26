@@ -1,6 +1,6 @@
-See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10007d59487
+      * See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10007d59487
 
-* solution
+      * solution
        identification division.
        program-id. name.
       
