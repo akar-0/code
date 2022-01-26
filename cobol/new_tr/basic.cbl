@@ -52,6 +52,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
            call 'NAME'
                using by content n
                by reference result
+      
            expect result to be expected.
            .
        end program tests.
