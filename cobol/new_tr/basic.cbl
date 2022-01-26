@@ -13,7 +13,7 @@ See https://www.codewars.com/kumite/61988aeb342ae10007d59487?sel=61988aeb342ae10
       
        procedure division using n result.
       
-          compute result = ,
+          initialize result
       
           goback.
        end program NAME.
