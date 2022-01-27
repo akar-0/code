@@ -49,6 +49,16 @@
        01  j usage index.
        01  s1 constant ''.
        01  e1 constant ''.
+       01  s2 constant ''.
+       01  e2 constant ''.
+       01  s3 constant ''.
+       01  e3 constant ''.
+       01  s4 constant ''.
+       01  e4 constant ''.
+       01  s5 constant ''.
+       01  e5 constant ''.
+       01  s6 constant ''.
+       01  e6 constant ''.
        01  r-disp            pic z(10)9.
        01  e-disp            pic z(10)9.
       
