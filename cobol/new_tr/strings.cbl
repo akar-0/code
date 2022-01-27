@@ -69,6 +69,36 @@
            move length of e1 to xp-length
            move e1 to e-chars
            perform dotest
+           
+           move length of s2 to s-length
+           move s2 to s-chars
+           move length of e2 to xp-length
+           move e2 to e-chars
+           perform dotest
+           
+           move length of s3 to s-length
+           move s3 to s-chars
+           move length of e3 to xp-length
+           move e3 to e-chars
+           perform dotest
+           
+           move length of s4 to s-length
+           move s4 to s-chars
+           move length of e4 to xp-length
+           move e4 to e-chars
+           perform dotest
+           
+           move length of s5 to s-length
+           move s5 to s-chars
+           move length of e5 to xp-length
+           move e5 to e-chars
+           perform dotest
+           
+           move length of s6 to s-length
+           move s6 to s-chars
+           move length of e6 to xp-length
+           move e6 to e-chars
+           perform dotest
       
            testsuite 'Random tests'.
            perform set-random-seed
