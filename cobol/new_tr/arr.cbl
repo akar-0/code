@@ -483,3 +483,4 @@
       
       pairs
       https://www.codewars.com/kumite/61c64fd30fb2fe0056398526?sel=61c64fd30fb2fe0056398526
+      https://www.codewars.com/kumite/61f28d4ae3436d000f308fc0?sel=61f4351424fe41003ed05e8b
