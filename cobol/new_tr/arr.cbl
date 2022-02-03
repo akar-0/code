@@ -53,7 +53,7 @@
       
        procedure division.
            testsuite 'Fixed tests'.
-           move '0,0,0,1' to fixed-test
+           move '' to fixed-test
            move 1 to expected
            perform do-fixed-test
 
@@ -67,7 +67,7 @@
            end tests.
       
        do-fixed-test.
-          move 0 to arr-length
+          move 0 to l
           if fixed-test <> ' '
               move 1 to i
               perform with test after until x-delim = space
@@ -75,15 +75,15 @@
                       delimited by ',' or space 
                       into x-str delimiter in x-delim
                       with pointer i
-                  add 1 to arr-length
-                  compute xs(arr-length) = function numval(x-str)
+                  add 1 to l
+                  compute xs(l) = function numval(x-str)
               end-perform
            end-if
            perform dotest
            .
       
        dotest.
-           move arr-length to l-disp
+           move l to l-disp
            testcase 'Testing arr-length = ' function trim(l-disp).
            
            call 'NAME' using 
@@ -96,14 +96,14 @@
            .
       
        display-array.
-           if arr-length = 0
+           if l = 0
               display 'xs = [ ]'
            else
              display 'xs = [' no advancing
-               perform varying i from 1 until i > arr-length
+               perform varying i from 1 until i > l
                  move xs(i) to n-disp
                  display function trim(n-disp) no advancing
-                 if i < arr-length
+                 if i < l
                      display ', ' no advancing
                  end-if
              end-perform
@@ -120,14 +120,14 @@
       
        string-to-arr.
            move 1 to i
-           move 0 to arr-length
+           move 0 to l
            perform with test after until x-delim = space
                unstring fixed-test 
                    delimited by ',' or space 
                    into x-str delimiter in x-delim
                    with pointer i
-               add 1 to arr-length
-               compute xs(exp-length) = function numval(x-str)
+               add 1 to l
+               compute xs(l) = function numval(x-str)
            end-perform
       
            perform dotest
@@ -136,7 +136,7 @@
       
       
        shuffle-array.
-         perform varying i from arr-length by -1 until i = 0
+         perform varying i from l by -1 until i = 0
            compute j = 1 + function random * i
            move xs(i) to n
            move xs(j) to xs(i)
@@ -146,9 +146,9 @@
       
       
        generate-random-array.
-           compute arr-length = min-length + 
+           computel = min-length + 
                        function random * (max-length - min-length + 1)
-           perform varying i from 1 until i > arr-length
+           perform varying i from 1 until i > l
                compute xs(i) = min + function random * (max - min + 1)
            end-perform
            .
