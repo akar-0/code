@@ -4,13 +4,13 @@
       
        linkage section.
        01  arr.
-           05 arr-length     pic 9(2).
+           05 arrLength     pic 9(2).
            05 xs             pic 9(2) occurs 0 to 20 times 
-                                      depending on arr-length.
+                                      depending on arrLength.
        01  result.
-           05 res-length     pic 9(2).
+           05 resLength     pic 9(2).
            05 res            pic 9(2) occurs 0 to 20 times 
-                                     depending on res-length.
+                                     depending on resLength.
       
        procedure division using arr result.
       
@@ -27,8 +27,8 @@
            testsuite 'Random tests'.
            perform set-random-seed
            perform 0 times
-              compute arr-length = 21 * function random
-              perform varying h from 1 until h > arr-length
+              compute arrLength = 21 * function random
+              perform varying h from 1 until h > arrLength
                   compute xs(h) = 100 * function random
               end-perform
               perform dotest
@@ -84,7 +84,7 @@
       
        dotest.
            move l to l-disp
-           testcase 'Testing arr-length = ' function trim(l-disp).
+           testcase 'Testing arrLength = ' function trim(l-disp).
            
            call 'NAME' using 
                by content arr
