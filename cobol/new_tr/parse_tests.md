@@ -96,3 +96,32 @@ COBOL declaration:
            05 arr-length     pic 9(2).
            05 xs pic 9(2) occurs 0 to 99 times depending on arr1-length indexed i.
 ```
+
+* Parse tests for "Assembler Interpreter (part II)"
+```python
+s='''
+call  func1
+call  print
+end
+
+func1:
+    call  func2
+    ret
+
+func2:
+    ret
+
+print:
+    msg 'This program should return -1'
+'''
+x="           "
+
+def f(s,i):
+    print(f"{x}move {len(s)} to progLen\n{x}string")
+    for e in s.split('\n'):
+        if not e:print(f"{x}lf")
+        elif "'" not in e: print(f"{x}'{e}' lf")
+        else:print(f"\n{x}q\n".join(f"{x}'{h}'" for h in e.split("'"))+' lf')
+    else: print(f"           into progChars\n           move length of e{i} to eLen\n           move e{i} to eChars\n           set e-end to true\n           perform dotest")
+
+print(f(s,2))
