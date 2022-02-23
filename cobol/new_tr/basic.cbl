@@ -27,7 +27,7 @@
        01 n           pic 9(8).
        01 result      pic 9(20).
        01 expected    pic 9(20).
-       01 n-disp      pic z(19)9.
+       01 nDisp       pic z(19)9.
       
        procedure division.
            testsuite 'Fixed tests'.
@@ -46,8 +46,8 @@
            end tests.
       
        dotest.
-           move n to n-disp
-           testcase 'Testing: n = ' function trim(n-disp).
+           move n to nDisp
+           testcase 'Testing: n = ' function trim(nDisp).
        
            call 'NAME'
                using by content n
