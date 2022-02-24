@@ -47,9 +47,9 @@
        01  j                 usage index.
        01  x-str             pic x(10).
        01  x-delim           pic x.
-       01  l-disp            pic z(9)9.
+       01  lDisp             pic z(9)9.
        01  fixed-test        pic x(100).
-       01  n-disp            pic z(19)9.
+       01  nDisp             pic z(19)9.
       
        procedure division.
            testsuite 'Fixed tests'.
@@ -83,8 +83,8 @@
            .
       
        doTest.
-           move l to l-disp
-           testcase 'Testing arrLength = ' function trim(l-disp).
+           move l to lDisp
+           testcase 'Testing arrLength = ' function trim(lDisp).
            
            call 'NAME' using 
                by content arr
