@@ -69,7 +69,7 @@
        doFixedTest.
           move 0 to l
           if fixed-test <> ' '
-              move 1 to i
+              set i to 1
               perform with test after until x-delim = space
                   unstring fixed-test 
                       delimited by ',' or space 
