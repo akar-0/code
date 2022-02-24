@@ -55,18 +55,18 @@
            testsuite 'Fixed tests'.
            move '' to fixed-test
            move 1 to expected
-           perform do-fixed-test
+           perform doFixedTest
 
       
            testsuite 'Random tests'.
            perform set-random-seed
            perform 0 times
 
-               perform dotest
+               perform doTest
            end-perform
            end tests.
       
-       do-fixed-test.
+       doFixedTest.
           move 0 to l
           if fixed-test <> ' '
               move 1 to i
@@ -82,7 +82,7 @@
            perform dotest
            .
       
-       dotest.
+       doTest.
            move l to l-disp
            testcase 'Testing arrLength = ' function trim(l-disp).
            
@@ -90,12 +90,12 @@
                by content arr
                by reference result
       
-           if expected <> result then perform display-array end-if
+           if expected <> result then perform displayArray end-if
       
            expect result to be expected.
            .
       
-       display-array.
+       displayArray.
            if l = 0
               display 'xs = [ ]'
            else
