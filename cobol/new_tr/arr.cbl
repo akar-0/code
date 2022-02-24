@@ -90,26 +90,54 @@
                by content arr
                by reference result
       
-           if expected <> result then perform displayArray end-if
-      
-           expect result to be expected.
-           .
-      
-       displayArray.
-           if l = 0
-              display 'xs = [ ]'
+           initialize assertion-message
+           if expected <> result
+              string 'Test failed' into assertion-message
+              perform assert-false
+              perform displayArrays
            else
-             display 'xs = [' no advancing
-               perform varying i from 1 until i > l
-                 move xs(i) to n-disp
-                 display function trim(n-disp) no advancing
-                 if i < l
-                     display ', ' no advancing
-                 end-if
-             end-perform
-             display ']'
+              perform assert-true
            end-if
            .
+      
+       displayArrays.
+           if l = 0
+              display 'list = [ ]'
+           else
+             display 'list = [' no advancing
+               perform varying i from 1 until i > l
+                 move xs(i) to nDisp
+                 display function trim(nDisp) no advancing
+                 if i < l display ', ' no advancing
+                 else     display ']' end-if
+             end-perform
+           end-if
+      
+           if rl = 0
+              display 'result = [ ]'
+           else
+             display 'result = [' no advancing
+               perform varying i from 1 until i > l
+                 move res(i) to nDisp
+                 display function trim(nDisp) no advancing
+                 if i < rl display ', ' no advancing
+                 else     display ']' end-if
+             end-perform
+           end-if
+      
+           if el = 0
+              display 'expected = [ ]'
+           else
+             display 'expected = [' no advancing
+               perform varying i from 1 until i > el
+                 move e(i) to nDisp
+                 display function trim(nDisp) no advancing
+                 if i < el display ', ' no advancing
+                 else     display ']' end-if
+             end-perform
+           end-if
+           .
+      
 
       
        end program tests.
