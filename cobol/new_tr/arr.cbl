@@ -117,7 +117,7 @@
               display 'result = [ ]'
            else
              display 'result = [' no advancing
-               perform varying i from 1 until i > l
+               perform varying i from 1 until i > rl
                  move res(i) to nDisp
                  display function trim(nDisp) no advancing
                  if i < rl display ', ' no advancing
