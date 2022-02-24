@@ -114,9 +114,9 @@
            end-if
       
            if rl = 0
-              display 'result = [ ]'
+              display 'result   = [ ]'
            else
-             display 'result = [' no advancing
+             display 'result   = [' no advancing
                perform varying i from 1 until i > rl
                  move res(i) to nDisp
                  display function trim(nDisp) no advancing
