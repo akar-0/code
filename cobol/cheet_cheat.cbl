@@ -81,3 +81,11 @@ blablablabla
 "GTAT" --> "CATA"
 ```
 ~~~
+      
+      
+      * cf. Coughlan p. 77
+
+       environment division.
+       configuration section.
+       special-names.
+            class lower is 'a' thru 'z'.
