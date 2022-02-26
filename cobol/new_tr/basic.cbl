@@ -38,8 +38,7 @@
            testsuite 'Random tests'.
            perform set-random-seed
            perform 0 times
-               compute n = 100 * function random
-               compute expected = 0
+
                perform dotest
            end-perform
 
