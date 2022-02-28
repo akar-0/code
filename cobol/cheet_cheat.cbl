@@ -83,10 +83,10 @@ blablablabla
 ~~~
       
       
-      * cf. Coughlan p. 77
+      * cf. Coughlan p. 77, 25
 
        environment division.
        configuration section.
        special-names.
             class lower is 'a' thru 'z'.
-            symbolic character qt is 35.
+            symbolic characters qt is 35.
