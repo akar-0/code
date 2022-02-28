@@ -89,3 +89,4 @@ blablablabla
        configuration section.
        special-names.
             class lower is 'a' thru 'z'.
+            symbolic character qt is 35.
