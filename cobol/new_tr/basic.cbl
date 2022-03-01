@@ -49,8 +49,8 @@
            testcase 'Testing: n = ' function trim(nDisp).
        
            call 'NAME'
-               using by content n
-               by reference result
+               using by content   n
+                     by reference result
       
            expect result to be expected.
            .
