@@ -115,9 +115,9 @@
       
        displayArrays.
            if l = 0
-              display 'list = [ ]'
+              display 'arr = [ ]'
            else
-             display 'list = [' no advancing
+             display 'arr = [' no advancing
                perform varying i from 1 until i > l
                  move xs(i) to nDisp
                  display function trim(nDisp) no advancing
