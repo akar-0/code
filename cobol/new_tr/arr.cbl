@@ -49,6 +49,7 @@
        01  x-delim           pic x.
        01  lDisp             pic z(9)9.
        01  fixed-test        pic x(100).
+       01  fixed-exp         pic x(100).
        01  nDisp             pic z(19)9.
       
        procedure division.
@@ -67,7 +68,7 @@
            end tests.
       
        doFixedTest.
-          move 0 to l
+          move 0 to l el
           if fixed-test <> ' '
               set i to 1
               perform with test after until x-delim = space
@@ -77,6 +78,18 @@
                       with pointer i
                   add 1 to l
                   compute xs(l) = function numval(x-str)
+              end-perform
+           end-if
+      
+          if fixed-exp <> ' '
+              set i to 1
+              perform with test after until x-delim = space
+                  unstring fixed-exp 
+                      delimited by ',' or space 
+                      into x-str delimiter in x-delim
+                      with pointer i
+                  add 1 to el
+                  compute e(l) = function numval(x-str)
               end-perform
            end-if
            perform dotest
