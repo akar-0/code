@@ -89,7 +89,7 @@
                       into x-str delimiter in x-delim
                       with pointer i
                   add 1 to el
-                  compute e(l) = function numval(x-str)
+                  compute e(el) = function numval(x-str)
               end-perform
            end-if
            perform dotest
