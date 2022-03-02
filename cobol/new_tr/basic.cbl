@@ -60,11 +60,35 @@
       
 
       * fixed size strings
-       doTest.
-           testcase 'Testing: s "' function trim(s) '"'.
+       identification division.
+       program-id. tests.
+      
+       data division.
+       working-storage section.
+       01 n           pic 9(5).
+       01 result      pic x(21).
+       01 expected    pic x(21).
+       01 nDisp       pic z(19)9.
+      
+       procedure division.
+           testsuite 'Fixed tests'.
+           move '' to n
+           move '' to expected
+           perform dotest
+      
+           testsuite 'Random tests'.
+           perform set-random-seed
+           perform 0 times
+               perform dotest
+           end-perform
+           end tests.
+      
+       dotest.
+           move n to nDisp
+           testcase 'Testing: n = ' function trim(nDisp).
        
-           call 'NAME'
-               using by content   s
+           call 'NNAME'
+               using by content   n
                      by reference result
       
            initialize assertion-message
@@ -79,3 +103,6 @@
                perform assert-true
             end-if
            .
+      
+       end program tests.
+      
