@@ -33,18 +33,18 @@
            testsuite 'Fixed tests'.
            move 0 to n
            move 0 to expected
-           perform dotest
+           perform doTest
       
            testsuite 'Random tests'.
            perform set-random-seed
            perform 0 times
 
-               perform dotest
+               perform doTest
            end-perform
 
            end tests.
       
-       dotest.
+       doTest.
            move n to nDisp
            testcase 'Testing: n = ' function trim(nDisp).
        
@@ -74,16 +74,16 @@
            testsuite 'Fixed tests'.
            move '' to n
            move '' to expected
-           perform dotest
+           perform doTest
       
            testsuite 'Random tests'.
            perform set-random-seed
            perform 0 times
-               perform dotest
+               perform doTest
            end-perform
            end tests.
       
-       dotest.
+       doTest.
            move n to nDisp
            testcase 'Testing: n = ' function trim(nDisp).
        
