@@ -92,7 +92,7 @@
                   compute e(el) = function numval(x-str)
               end-perform
            end-if
-           perform dotest
+           perform doTest
            .
       
        doTest.
