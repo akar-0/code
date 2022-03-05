@@ -11,3 +11,5 @@ https://www.codewars.com/kata/540954232a3259755d000039/train/javascript
 https://www.codewars.com/kumite/621d12e7bdbe4800508141a1?sel=621d12e7bdbe4800508141a1
 
 https://www.codewars.com/kumite/6222a1cc213533000ec689e7?sel=6222a1cc213533000ec689e7
+
+https://www.codewars.com/kumite/622369ac1366ee000e5edfa3?sel=622369ac1366ee000e5edfa3
