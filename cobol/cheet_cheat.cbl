@@ -90,3 +90,4 @@ blablablabla
        special-names.
             class lower is 'a' thru 'z'.
             symbolic characters qt is 35.
+       repository. function all intrinsic.
