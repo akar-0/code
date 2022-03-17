@@ -491,25 +491,23 @@
 
       
       * display big arrays
-       display-array.
-           evaluate arr-length
+       displayArray.
+           evaluate l
            when 0
-              display 'xs = [ ]'
+              display 'arr = [ ]'
            when > 100
               display 'Array too big to be displayed'
            when other
-             display 'xs = [' no advancing
-             perform varying i from 1 until i > arr-length
-                 move xs(i) to n-disp
-                 display function trim(n-disp) no advancing
-                 if i < arr-length
-                     display ', ' no advancing
-                 end-if
+             display 'stt = [' no advancing
+             perform varying i from 1 until i > l
+                 move xs(i) to aDisp
+                 display function trim(aDisp) no advancing
+                 if i < l
+                      display ', ' no advancing
+                 else display ']' end-if
              end-perform
-             display ']'
            end-evaluate
            .
-
       
       
       pairs
