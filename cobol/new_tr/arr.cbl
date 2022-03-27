@@ -4,13 +4,13 @@
       
        linkage section.
        01  arr.
-           05 arrLength     pic 9(2).
-           05 xs             pic 9(2) occurs 0 to 20 times 
+           05  arrLength     pic 9(2).
+           05  xs            pic 9(2) occurs 0 to 20 times 
                                       depending on arrLength.
        01  result.
-           05 resLength     pic 9(2).
-           05 res            pic 9(2) occurs 0 to 20 times 
-                                     depending on resLength.
+           05  resLength     pic 9(2).
+           05  res           pic 9(2) occurs 0 to 20 times 
+                                      depending on resLength.
       
        procedure division using arr result.
       
