@@ -88,7 +88,6 @@
       
            initialize assertion-message
            if expected <> result
-              string 'Test failed' into assertion-message
               perform assert-false
               perform displayArrays
            else
