@@ -31,8 +31,8 @@
        01  x-str             pic x(10).
        01  x-delim           pic x.
        01  lDisp             pic z(9)9.
-       01  fixedTest        pic x(100).
-       01  fixedExp         pic x(100).
+       01  fixedTest         pic x(100).
+       01  fixedExp          pic x(100).
        01  nDisp             pic z(19)9.
       
        procedure division.
