@@ -31,8 +31,8 @@
        01  x-str             pic x(10).
        01  x-delim           pic x.
        01  lDisp             pic z(9)9.
-       01  fixed-test        pic x(100).
-       01  fixed-exp         pic x(100).
+       01  fixedTest        pic x(100).
+       01  fixedExp         pic x(100).
        01  nDisp             pic z(19)9.
       
        procedure division.
@@ -52,10 +52,10 @@
       
        doFixedTest.
           move 0 to l el
-          if fixed-test <> ' '
+          if fixedTest <> ' '
               set i to 1
               perform with test after until x-delim = space
-                  unstring fixed-test 
+                  unstring fixedTest 
                       delimited by ',' or space 
                       into x-str delimiter in x-delim
                       with pointer i
@@ -64,10 +64,10 @@
               end-perform
            end-if
       
-          if fixed-exp <> ' '
+          if fixedExp <> ' '
               set i to 1
               perform with test after until x-delim = space
-                  unstring fixed-exp 
+                  unstring fixedExp 
                       delimited by ',' or space 
                       into x-str delimiter in x-delim
                       with pointer i
