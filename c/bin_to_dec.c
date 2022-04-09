@@ -39,3 +39,4 @@ char* bin(unsigned int k)
   b[8]='\0';
   return b;
 }
+//  int to dec https://www.codewars.com/kata/551f37452ff852b7bd000139/solutions/c
