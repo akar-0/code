@@ -21,7 +21,11 @@ int cmp_chr(const void *a, const void *b) {
 int comp(const void * a, const void * b) {
    return (*(int*)a - *(int*)b);
 }
-
+int cmp_ints_ascending (const void *a_, const void *b_)
+{
+  int a = *((int *)a_), b = *((int *)b_);
+  return (a > b) - (a < b);
+}
 
 cmp(*p, *q) 
 { 
