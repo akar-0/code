@@ -106,7 +106,27 @@
               display 'Expected = "' function trim(expected trailing) '"'
               display 'Actual   = "' function trim(result trailing) '"'
            else
+              perform assert-true
+           end-if
+           .
+      
+       doTest.
+           testcase 'Testing: s = "' function trim(s) '"'.
+       
+           call 'NNAME'
+               using by content   s
+                     by reference result
+      
+           initialize assertion-message
+           if result <> expected
+              string 'Test failed' line-feed
+                     'Expected = "' function trim(expected) '"'
+                      line-feed
+                     'Actual   = "' function trim(result trailing) '"'
+              into assertion-message
               perform assert-false
+           else
+              perform assert-true
            end-if
            .
       
