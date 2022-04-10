@@ -52,7 +52,15 @@
                using by content   n
                      by reference result
       
-           expect result to be expected.
+           initialize assertion-message
+           if result <> expected
+              perform assert-false
+              display 's    = "' function trim(strng trailing) '"'
+              display 'Expected = "' function trim(expected trailing) '"'
+              display 'Actual   = "' function trim(result trailing) '"'
+           else
+              perform assert-false
+           end-if
            .
       
        end program tests.
@@ -93,15 +101,13 @@
       
            initialize assertion-message
            if result <> expected
-              string 'Test failed' line-feed
-                     'Expected "' function trim(expected) '"'
-                      line-feed
-                     'Actual   "' function trim(result trailing) '"'
-               into assertion-message
-               perform assert-false
-            else
-               perform assert-true
-            end-if
+              perform assert-false
+              display 'strng    = "' function trim(s trailing) '"'
+              display 'Expected = "' function trim(expected trailing) '"'
+              display 'Actual   = "' function trim(result trailing) '"'
+           else
+              perform assert-false
+           end-if
            .
       
        end program tests.
