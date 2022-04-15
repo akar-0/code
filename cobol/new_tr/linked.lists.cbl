@@ -1,4 +1,9 @@
-      * https://www.codewars.com/kumite/624f0506881dac004a73dc35?sel=624f0506881dac004a73dc35
+      * binary tree search
+      * https://www.codewars.com/kumite/62540d9de5b26d0030426358?sel=62540d9de5b26d0030426358
+      * find amplitude
+      * https://www.codewars.com/kumite/6257f93fc7eedf006989e634?sel=6257f93fc7eedf006989e634
+      * find max
+      * https://www.codewars.com/kumite/62572fdd6a427a0061f14e01?sel=62572fdd6a427a0061f14e01
 
       
       *   tests to generate binary trees allocating dymamic memory
