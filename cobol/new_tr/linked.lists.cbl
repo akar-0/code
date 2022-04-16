@@ -8,6 +8,8 @@
       * https://www.codewars.com/kumite/625a037643cbf60057048f5b?sel=625a037643cbf60057048f5b
       * length and count
       * https://www.codewars.com/kumite/61e854f08714760015d75b55?sel=61e854f08714760015d75b55
+      * remove duplicates
+      * https://www.codewars.com/kumite/6258fa9643cbf6004a04637d?sel=6258fa9643cbf6004a04637d
       
       *   tests to generate binary trees allocating dymamic memory
        identification division.
