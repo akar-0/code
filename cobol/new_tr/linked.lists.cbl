@@ -4,7 +4,8 @@
       * https://www.codewars.com/kumite/6257f93fc7eedf006989e634?sel=6257f93fc7eedf006989e634
       * find max
       * https://www.codewars.com/kumite/62572fdd6a427a0061f14e01?sel=62572fdd6a427a0061f14e01
-
+      *  sorted merge (allocate)
+      * https://www.codewars.com/kumite/625a037643cbf60057048f5b?sel=625a037643cbf60057048f5b
       
       *   tests to generate binary trees allocating dymamic memory
        identification division.
