@@ -6,6 +6,8 @@
       * https://www.codewars.com/kumite/62572fdd6a427a0061f14e01?sel=62572fdd6a427a0061f14e01
       *  sorted merge (allocate)
       * https://www.codewars.com/kumite/625a037643cbf60057048f5b?sel=625a037643cbf60057048f5b
+      * length and count
+      * https://www.codewars.com/kumite/61e854f08714760015d75b55?sel=61e854f08714760015d75b55
       
       *   tests to generate binary trees allocating dymamic memory
        identification division.
