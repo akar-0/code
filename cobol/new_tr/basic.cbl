@@ -59,7 +59,7 @@
               display 'Expected = "' function trim(expected trailing) '"'
               display 'Actual   = "' function trim(result trailing) '"'
            else
-              perform assert-false
+              perform assert-true
            end-if
            .
       
