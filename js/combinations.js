@@ -1,5 +1,6 @@
 // https://www.codewars.com/kata/55e7280b40e1c4a06d0000aa/solutions/javascript
 // https://www.codewars.com/kata/58ad29bc4b852b14a4000050/solutions/javascript
+// https://www.codewars.com/kata/582da6ba06e37f9b75000510/solutions/javascript
 function comb(arr,n){
   if (n==1) return arr.map(x=>[x])
   const L=[]
