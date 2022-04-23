@@ -12,6 +12,8 @@
       * https://www.codewars.com/kumite/6258fa9643cbf6004a04637d?sel=6258fa9643cbf6004a04637d
       * binary tree compare
       * https://www.codewars.com/kumite/6258d40da07121003ec865eb?sel=6258d40da07121003ec865eb
+      * sort binary tree by leve
+      * https://www.codewars.com/kumite/62639731d13ea6788f0665d8?sel=62639731d13ea6788f0665d8
       
       *   tests to generate binary trees allocating dymamic memory
        identification division.
