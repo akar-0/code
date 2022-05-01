@@ -6,3 +6,5 @@
 -- https://www.codewars.com/kata/reviews/5b05b923e7543a91050020eb/groups/5b26891943e7ad74e40014bf
 -- partition even / odd
 -- https://www.codewars.com/kata/59c7e477dcc40500f50005c7/solutions/haskell
+-- splitAt
+-- https://www.codewars.com/kata/reviews/5b6deab4894c029960000055/groups/625cdf0205428e0001034d19
