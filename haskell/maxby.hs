@@ -1,0 +1,1 @@
+-- https://stackoverflow.com/questions/25236258/is-there-a-haskell-equivalent-of-scalas-iterable-maxby
