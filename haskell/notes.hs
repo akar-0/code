@@ -1,0 +1,2 @@
+--  find \\ union delete lines unlines findIndex elemIndex elemIndices
+-- http://learnyouahaskell.com/modules
