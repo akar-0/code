@@ -1,4 +1,5 @@
 --  find \\ union delete lines unlines findIndex elemIndex elemIndices
 -- genericLength, genericTake, genericDrop, genericSplitAt, genericIndex genericReplicate
 -- nubBy, deleteBy, unionBy, intersectBy groupBy
+-- insert !!!
 -- http://learnyouahaskell.com/modules
