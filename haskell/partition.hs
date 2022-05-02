@@ -8,3 +8,5 @@
 -- https://www.codewars.com/kata/59c7e477dcc40500f50005c7/solutions/haskell
 -- splitAt
 -- https://www.codewars.com/kata/reviews/5b6deab4894c029960000055/groups/625cdf0205428e0001034d19
+-- span!!!!!!!!!
+ span (/=5) [0,1,2,3,4,5,6,7,8,9] = ([0,1,2,3,4],[5,6,7,8,9])
