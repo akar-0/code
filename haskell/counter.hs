@@ -8,6 +8,9 @@
 -- https://www.codewars.com/kata/51e056fe544cf36c410000fb/solutions/haskell
 -- factorial decomposition
 -- https://www.codewars.com/kata/5a045fee46d843effa000070/solutions/haskell
+-- molecule to atoms
+-- https://www.codewars.com/kata/52f831fa9d332c6591000511/solutions/haskell
+
 
 import qualified Data.HashMap.Strict as HMap
 
