@@ -43,3 +43,5 @@ nextPrime n = head $ filter isPrime [n+1..]
 -- https://www.codewars.com/kata/53c9157c689f841d16000c03/solutions/haskell
 -- kprimes
 -- https://www.codewars.com/kata/5726f813c8dcebf5ed000a6b/solutions/haskell
+-- factorial decomposition
+-- https://www.codewars.com/kata/5a045fee46d843effa000070/solutions/haskell
