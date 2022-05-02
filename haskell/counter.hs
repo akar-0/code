@@ -6,6 +6,8 @@
 -- https://www.codewars.com/kata/5b358a1e228d316283001892/solutions/haskell
 -- ??
 -- https://www.codewars.com/kata/51e056fe544cf36c410000fb/solutions/haskell
+-- factorial decomposition
+-- https://www.codewars.com/kata/5a045fee46d843effa000070/solutions/haskell
 
 import qualified Data.HashMap.Strict as HMap
 
