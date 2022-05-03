@@ -45,3 +45,35 @@ nextPrime n = head $ filter isPrime [n+1..]
 -- https://www.codewars.com/kata/5726f813c8dcebf5ed000a6b/solutions/haskell
 -- factorial decomposition
 -- https://www.codewars.com/kata/5a045fee46d843effa000070/solutions/haskell
+
+
+
+isPrime :: Integer -> Bool
+isPrime x
+  | x < 2        = False
+  | x == 2       = True
+  | mod x 2 == 0 = False
+  | otherwise    = all (\p -> mod x p /= 0) [3,5..s]
+    where s = ceiling $ sqrt $ fromIntegral x
+primeFactors :: Integer -> [(Integer,Integer)]
+primeFactors n | n < 2 = []
+               | otherwise = b ++ (f' n r 7 0 (cycle [4, 2, 4, 2, 4, 6, 2, 6]))
+                where (r,b) = (f n [2,3,5] []) 
+
+f :: Integer -> [Integer] -> [(Integer,Integer)] -> (Integer, [(Integer,Integer)])
+f n [] a = (n,a)
+f n (p:e) a | mod n p /= 0 = f n e a 
+            | otherwise = f r e (a++[(p,x)])
+                where (r,x) = red (div n p) p 1 
+
+red :: Integer -> Integer -> Integer -> (Integer,Integer)
+red n p i | mod n p == 0 = red (div n p) p (i+1)
+          | otherwise = (n,i)
+
+f' :: Integer -> Integer -> Integer -> Int -> [Integer] -> [(Integer,Integer)]
+f' n m p i c | p * p > n = if m == n then [(n,1)] else if m > 1 then [(m,1)] else []                                                                                                         
+            | m ==1 = []
+            | mod m p /= 0 = f' n m (p+(c!!i)) (i+1) c
+            | otherwise = [(p,k)] ++ (f' n r (p+(c!!i)) (i+1) c)
+                where (r,k) = red (div m p) p 1 
+
