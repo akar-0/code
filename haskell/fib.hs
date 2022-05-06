@@ -1,0 +1,1 @@
+-- https://www.codewars.com/kata/5779f894ec8832493f00002d/solutions
