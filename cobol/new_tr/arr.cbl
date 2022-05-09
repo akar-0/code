@@ -38,7 +38,7 @@
       
        procedure division.
            testsuite 'Fixed tests'.
-           move '' to fixed-test
+           move '' to fixedTest
            move 1 to expected
            perform doFixedTest
 
