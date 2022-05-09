@@ -1,5 +1,6 @@
        identification division.
        program-id. NAME.
+      
        data division.
       
        linkage section.
