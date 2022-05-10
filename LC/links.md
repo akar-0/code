@@ -15,3 +15,4 @@
 * [barista](https://www.codewars.com/kata/6167e70fc9bd9b00565ffa4e/solutions)
 * [Lambda Calculus: Lists as folds I](https://www.codewars.com/kata/5fb44fbd98799a0021dca93a/solutions/lambdacalc)
 * [sort numbers](https://www.codewars.com/kata/5174a4c0f2769dd8b1000003/solutions)
+* [Rule 30](https://www.codewars.com/kata/5581e52ac76ffdea700000c1/solutions)
