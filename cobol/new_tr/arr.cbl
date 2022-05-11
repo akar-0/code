@@ -1,8 +1,6 @@
        identification division.
        program-id. NAME.
-      
        data division.
-      
        linkage section.
        01  arr.
            05  arrLength     pic 9(2).
