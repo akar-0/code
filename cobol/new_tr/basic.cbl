@@ -3,7 +3,6 @@
       * solution
        identification division.
        program-id. name.
-      
        data division.
        local-storage section.
        ...
@@ -12,9 +11,7 @@
        01 result      pic 9(20).
       
        procedure division using n result.
-      
           initialize result
-      
           goback.
        end program NAME.
       
