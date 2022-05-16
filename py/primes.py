@@ -1,3 +1,6 @@
+# miller rabin https://www.codewars.com/kata/5742e725f81ca04d64000c11/solutions/python
+
+
 #see also https://stackoverflow.com/questions/2211990/how-to-implement-an-efficient-infinite-generator-of-prime-numbers-in-python/10733621#10733621
 cycle [2, 4, 2, 4, 6, 2, 6, 4, 2, 4, 6, 6, 2, 6, 4, 2, 6, 4, 6, 8, 4, 2, 4, 2, 4, 8, 6, 4, 6, 2, 4, 6, 2, 6, 6, 4, 2, 4, 6, 2, 6, 4, 2, 4, 2, 10, 2, 10]
 48 elements, start from 11 to avoid multiples of primes until 11 excluded
