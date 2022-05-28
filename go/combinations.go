@@ -12,3 +12,7 @@ func Comb(arr []int, n int) []int {
   }
   return L
 }
+
+
+// Permutations
+// https://www.codewars.com/kumite/629287c838050ccf7cfb8c76?sel=629287c838050ccf7cfb8c76
