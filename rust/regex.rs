@@ -6,3 +6,5 @@ use regex::Regex;
 // https://www.codewars.com/kata/5a420163b6cfd7cde5000077/solutions/rust
 // pseudo back refs
 // https://www.codewars.com/kata/58708934a44cfccca60000c4/solutions/rust
+// iter over matches
+// https://www.codewars.com/kumite/6298512bd747b9002f4eb5dd?sel=6298512bd747b9002f4eb5dd
