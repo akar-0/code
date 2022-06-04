@@ -17,3 +17,5 @@ BigInt::from_str(...).unwrap()
 // https://www.codewars.com/kumite/6290c93158d87b00308c8e74?sel=6290c93158d87b00308c8e74
 // biguint
 // https://www.codewars.com/kumite/6290d0a36075a8005b1ffb68?sel=6290de481203ad0cd98cea54
+// fusc: tobinary string...
+// https://www.codewars.com/kumite/629b7aecb05f82004b670691?sel=629b7aecb05f82004b670691
