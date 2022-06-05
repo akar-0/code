@@ -16,3 +16,22 @@ func Comb(arr []int, n int) []int {
 
 // Permutations
 // https://www.codewars.com/kumite/629287c838050ccf7cfb8c76?sel=629287c838050ccf7cfb8c76
+
+
+// combinations with replacements
+// https://www.codewars.com/kumite/629c1b27448d0bdd526839fa?sel=629c1b27448d0bdd526839fa
+
+func combinationsWithReplacement(arr []int, n int) [][]int {
+  if n == 1 {
+    L := make([][]int, len(arr))
+    for i,e := range arr { L[i] = []int{e} }
+    return L
+  }
+  L := [][]int{}
+  for i,e := range arr {
+    for _,x := range combinationsWithReplacement(arr[i:], n-1) {
+      L = append(L, append([]int{e}, x...))
+    }
+  }
+  return L
+}
