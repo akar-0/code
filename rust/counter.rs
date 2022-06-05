@@ -9,6 +9,7 @@ use std::collections::HashMap;
         *a.entry(*c).or_insert(0) += 1;
         // decrement
         a.entry(c).and_modify(|c| *c -= 1);
+        *counter.get_mut(&c).unwrap() -= 1;
     }
 
 
