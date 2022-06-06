@@ -5,3 +5,7 @@
 
 use itertools::Itertools;
 .sorted_by(...
+
+  
+  use std::cmp::Ordering;
+  // https://www.codewars.com/kumite/6285f8c5fe313d00224e12a1?sel=6285f8c5fe313d00224e12a1
