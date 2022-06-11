@@ -4,7 +4,7 @@
 // cf alphabetic anagrams
 use std::collections::HashMap;
 
-    let mut a: HashMap<char, i32> = HashMap::new();
+    let mut a: HashMap<char, u32> = HashMap::new();
     for c in s.to_owned().iter() {
         *a.entry(*c).or_insert(0) += 1;
         // decrement
