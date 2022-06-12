@@ -29,7 +29,7 @@ xor rdx, rdx
 before div/idiv....
 
 * sqrt: sqrtsd xmm0, xmm0
-
+*  the following registers must not be modified by the function: rbx, rsp, rbp, r12-r15.
 *  move a int32 into an int64:  movsx rax, ebx ( https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/solutions )
 *  [test](https://en.wikipedia.org/wiki/TEST_(x86_instruction))
 * dword = double word =  int32
