@@ -7,3 +7,4 @@ s.chars().sorted().rev().collect::<String>()
 
 // iproduct
 // https://www.codewars.com/kata/593ff8b39e1cc4bae9000070/solutions/rust
+    for (i, j) in itertools::iproduct!(1..=l, 1..=m) 
