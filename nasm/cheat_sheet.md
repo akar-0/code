@@ -13,6 +13,7 @@
 | r8 | r8d | r8w | r8b | none | same until r15|
 |rip|eip|?|?|?|control flow pointer|
 
+* Reserved registers (to restaure): rbx, rsp, rbp, r12-r15.
 ## Arguments
 * 1:  RDI
 * 2: RSI
