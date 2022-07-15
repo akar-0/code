@@ -23,6 +23,7 @@
 * 6:  R9
 
 then stack...
+* But r10,r9,r8 hold the 4th, 5th and 6th argument function. ??????
 
 ```nasm
 xor rdx, rdx
