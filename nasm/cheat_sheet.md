@@ -50,6 +50,14 @@ before div/idiv....
 * ja(e) / jb(e)
 * [Miles per gallon to kilometers per liter](https://www.codewars.com/kumite/62d11a27e71a8e0023c8dcf0?sel=62d11a27e71a8e0023c8dcf0)
 
+
+## integers
+* abs: 
+```asm
+  mov ebx, eax
+  neg eax
+  cmovl eax, ebx
+```
 ## test parity
 * test eax,1
 * jz _even
