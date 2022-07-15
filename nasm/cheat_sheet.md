@@ -46,6 +46,7 @@ before div/idiv....
 ## floats
 * mulsd xmm1, xmm2
 * comisd xmm1, xmm0 
+* xorps  xmm0, xmm0
 * ja(e) / jb(e)
 * [Miles per gallon to kilometers per liter](https://www.codewars.com/kumite/62d11a27e71a8e0023c8dcf0?sel=62d11a27e71a8e0023c8dcf0)
 
