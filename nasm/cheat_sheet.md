@@ -49,7 +49,12 @@ before div/idiv....
 * xorps  xmm0, xmm0
 * ja(e) / jb(e)
 * [Miles per gallon to kilometers per liter](https://www.codewars.com/kumite/62d11a27e71a8e0023c8dcf0?sel=62d11a27e71a8e0023c8dcf0)
-
+* xchg:
+```asm
+    vpsubd xmm0, xmm1
+    vpaddd xmm1, xmm0
+    vpsubd xmm0, xmm1, xmm0
+```
 
 ## integers
 * abs: 
