@@ -37,6 +37,21 @@ before div/idiv....
 * dword = double word =  int32
 * qword = quadword = int64
 
+## flags
+
+| abbr. |     name    |  infos |
+|-------|-------------|--------|
+|  ZF   |  zero flag  |     |
+|  CF   |  carry flag | |
+|  SF   |  sign flag  | |
+|  TF   |  trap flag  | (debugging mode) |
+|  PF   |  parity flag | LSB is even |
+|  OF   |  overflow tag | |
+
+
+
+
+
 ## Conversions
 * [doc](https://docs.oracle.com/cd/E19120-01/open.solaris/817-5477/epmsr/index.html)
 * int to float: cvtsi2sd xmm0,rax
