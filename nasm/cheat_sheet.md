@@ -45,7 +45,7 @@ before div/idiv....
 |  CF   |  carry flag | |
 |  SF   |  sign flag  | |
 |  TF   |  trap flag  | (debugging mode) |
-|  PF   |  parity flag | LSB is even |
+|  PF   |  parity flag | number of set bits in LSB is even |
 |  OF   |  overflow tag | |
 
 
