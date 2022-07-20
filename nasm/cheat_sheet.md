@@ -48,16 +48,18 @@ before div/idiv....
 |  PF   |  parity flag | number of set bits in LSB is even |
 |  OF   |  overflow tag | |
 
-
-
-
-
 ## Conversions
 * [doc](https://docs.oracle.com/cd/E19120-01/open.solaris/817-5477/epmsr/index.html)
 * int to float: cvtsi2sd xmm0,rax
 * float to int: [CW](https://www.codewars.com/kata/5a805d8cafa10f8b930005ba/solutions/nasm)
-* clear float: pxor xmm0,xmm0
+* clear float: pxor xmm0,xmm0 / xorps (???)
 
+```asm
+cvtsi2sd xmm0,rax
+cvttsd2si  ebx, xmm0     ; convert with truncation (C-style cast)
+cvtsd2si  ecx, xmm0    ; rounded to nearest integer (or whatever the current rounding mode is)
+
+```
 ## floats
 * mulsd xmm1, xmm2
 * comisd xmm1, xmm0 
