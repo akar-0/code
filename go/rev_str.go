@@ -20,7 +20,7 @@ func ReverseString(s string) string {
 
 
 func reverseSlice(a []string) []string {
-    for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+    for i, j := 0, len(a)-1; i < j; i, j = i+1, j-1 {
         a[i], a[j] = a[j], a[i]
     }
     return a
