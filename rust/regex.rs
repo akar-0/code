@@ -21,9 +21,4 @@ fn ... {
 use fancy_regex::Regex;
 use once_cell::sync::OnceCell;
 
-fn f(x: &[[char; 8]; 8]) -> bool {
-    static S_RE: &str = "[♛♜] *♔|♔ *[♛♜]|[♛♜](.{8} )*.{8}♔|♔(.{8} )*.{8}[♛♜]|[♛♝]((?!n).{9} )*(?!n).{9}♔|[♛♝]((?<!n.).{7} )*(?<!n).{7}♔|♔((?!n).{9} )*(?!n).{9}[♛♝]|♔((?<!n.).{7} )*(?<!n).{7}[♛♝]|♟(?!n).{9}♔|♟(?<!n.).{7}♔|♞(?!n).{18}♔|♞(?<!n.).{16}♔|♞(?!n|.n).{10}♔|♞(?<!n.|n..)(?![^n]{6}).{6}♔|♔(?<!n.|n..)(?![^n]{6}).{6}♞|♔(?!n|.n).{10}♞|♔(?<!n.).{16}♞|♔(?!n).{18}♞";
-    static RE: OnceCell<Regex> = OnceCell::new();
-    let s: String = x.join(&'n').into_iter().collect();
-    RE.get_or_init(|| Regex::new(S_RE).unwrap()).is_match(&s).unwrap()
-}
+//   https://www.codewars.com/kata/reviews/62dbfe4492f0ac0001901e33/groups/62dc135292f0ac00019023a0
