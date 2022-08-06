@@ -15,3 +15,23 @@ func bisect(m float64, L *[]int) int {
   }
   return lo
 }
+
+
+func bisect(m int, L *[]int) int {
+  lo, hi := 0, len(*L)
+  var mid int
+  for lo < hi {
+    mid = (lo + hi) / 2
+    if m == (*L)[mid] {
+      return mid
+    } else if m < (*L)[mid] {
+      hi = mid
+    } else {
+      lo = mid + 1
+    }
+  }
+  return lo
+}
+
+
+bisect(num, &L)
