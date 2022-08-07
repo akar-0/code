@@ -35,3 +35,23 @@ func combinationsWithReplacement(arr []int, n int) [][]int {
   }
   return L
 }
+
+
+// heap algorithm
+func permutations(arr []int, l int, p [][]int) [][]int {
+  fmt.Println("", l)
+  if l == 1 { p = append(p, append([]int{}, arr...)) }
+  fmt.Println("", p)
+  for i := 0 ; i < l ; i++ {
+    p = permutations(arr, l-1, p)
+    if l % 2 == 1 {
+      arr[0],arr[l-1] = arr[l-1], arr[0]
+    } else {
+      arr[i], arr[l-1] = arr[l-1], arr[i]
+    }
+  }
+  return p
+}
+
+
+
