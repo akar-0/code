@@ -14,7 +14,24 @@ bool isPrime(long n)
  return true;
 }
 
-
+ulong nextPrime(ulong n)
+{
+    ulong x;
+    while (true)
+    {
+        auto s = cast(ulong) (cast(double) n).sqrt;
+        for (x = 3 ; x <= s ; x += 2)
+        {
+            if (!(n %x))
+            {
+                n += 2;
+                break;
+            }
+        }
+        if (x > s) break;
+    }
+    return n;
+}
 
 
 // POWAAA
