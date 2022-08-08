@@ -55,3 +55,30 @@ func permutations(arr []int, l int, p [][]int) [][]int {
 
 
 
+
+
+func permutations(a []rune, l int) [][]rune {
+  ls := [][]rune{append([]rune{}, a...)}
+  c := make([]int, l)
+  i := 1
+  var k int
+  for i < l {
+    if c[i] < i {
+      if i % 2 == 1 {
+        k = c[i]
+      } else {
+        k = 0
+      }
+      a[i], a[k] = a[k], a[i]
+      c[i]++
+      i = 1
+      ls = append(ls, append([]rune{}, a...))
+    } else {
+      c[i] = 0
+      i++
+    }
+  }
+  return ls
+}
+
+
