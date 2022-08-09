@@ -46,4 +46,6 @@ function allPermutations(arr) {
   return res;
 }
 
+// yield
 
+https://www.codewars.com/kata/reviews/62f2177ffea8610001361509/groups/62f24a85e9e51f0001689603
