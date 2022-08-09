@@ -12,3 +12,20 @@ ulong[][] combinationsWithReplacement(ulong[] arr, ulong n)
     }
     return res;
 }
+
+
+
+
+ubyte[][] allPermutations(ubyte[] s)
+{
+    auto perm = s.permutations;
+    ubyte[][] res;
+    foreach(i; 1 .. s.length + 1)
+    {
+        foreach(p; perm)
+        {
+            res ~= p[0 .. i].array;
+        }
+    }
+    return res;
+}
