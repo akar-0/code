@@ -14,3 +14,8 @@ auto getDivisors(uint num)
 
 
 
+uint countDivisors(uint num)
+{
+    auto sq = sqrt(cast(double) num);
+    return 2 * iota(2, cast(uint) sq + 1).fold!((acc, cur) => acc + !(num%cur))(1) - !(sq % 1.0);
+}
