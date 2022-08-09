@@ -34,3 +34,16 @@ function permutations(a,l=a.length) {
   }
   return L
 }
+
+
+
+
+function allPermutations(arr) {
+  const perm = permutations(arr), res = []
+  for (let i = 1 ; i <= arr.length ; i++) {
+    perm.forEach(p => res.push(p.slice(0,i)));
+  }
+  return res;
+}
+
+
