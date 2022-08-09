@@ -82,3 +82,29 @@ func permutations(a []rune, l int) [][]rune {
 }
 
 
+
+func allPermutations(arr []rune) [][]rune {
+  perm := permutations(arr, len(arr), nil)
+  res := [][]rune{}
+  for i := 1 ; i <= len(arr) ; i++ {
+    for _,p := range perm {res = append(res, p[:i])}
+  }
+  return res
+}
+
+func permutations(arr []rune, l int, p [][]rune) [][]rune {
+  if l == 1 { p = append(p, append([]rune{}, arr...)) }
+  for i := 0 ; i < l ; i++ {
+    p = permutations(arr, l-1, p)
+    if l % 2 == 1 {
+      arr[0],arr[l-1] = arr[l-1], arr[0]
+    } else {
+      arr[i], arr[l-1] = arr[l-1], arr[i]
+    }
+  }
+  return p
+}
+
+
+
+
