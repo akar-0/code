@@ -112,3 +112,40 @@ fn next_prime(m: u32) -> u32 {
     }
   1_u32
 }
+
+
+
+use std::collections::HashSet;
+use lazy_static::lazy_static;
+
+lazy_static! {
+    static ref PRIMES_VEC: Vec<u32> = {
+        let mut n = 30_000;
+        let c = if (n % 6) > 1 { 1 } else { 0 };
+        let a = [n, n - 1, n + 4, n + 3, n + 2, n + 1];
+        n = a[(n%6) as usize];
+        let mut ls = std::iter::repeat(true).take(n/3).collect::<Vec<_>>();
+        ls[0] = false;
+        let sq = (n as f64).sqrt() as usize;
+        let l = ls.len();
+        for i in 0..=sq/3 {
+            if ls[i] {
+                let j=(3*i+1)|1;
+                let h = j * j;
+                for e in (h/3..l).step_by(2 * j) {
+                    ls[e] = false;
+                }
+                for e in ((h+4*j-2*j*(i%2))/3..l).step_by(2*j) {
+                    ls[e] = false;
+                }
+            }
+        }
+        return [2u32,3u32]
+        .iter().copied().chain(
+            (1..n/3-c)
+            .filter(|&x| ls[x])
+            .map(|i|  (3 * i as u32 + 1) | 1)
+        ).collect()
+    };
+    static ref PRIMES_SET: HashSet<u32> = PRIMES_VEC.iter().copied().collect();
+}
