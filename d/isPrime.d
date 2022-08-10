@@ -70,7 +70,7 @@ static auto primes()
             }
         }
     }
-    writeln(L.length);
+ //   writeln(L.length);
  //   writeln(L);
     auto P = assumeSorted([2u,3].chain(iota(1, n/3-c).filter!(x => L[x]).map!(i => (3*i+1)|1)).array);
     return P;
