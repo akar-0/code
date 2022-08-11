@@ -14,6 +14,22 @@ ulong[][] combinationsWithReplacement(ulong[] arr, ulong n)
 }
 
 
+int[2][][] combinations(int[2][] arr, ulong n)
+{
+    if (n == 1) return arr.map!(x => [x]).array;
+    int[2][][] res;
+    foreach(t; arr.enumerate)
+    {
+        auto i = t.index, e = t.value;
+        foreach(x;combinations(arr[i + 1 .. $], n-1))
+        {
+            res ~= ([e] ~ x);
+        }
+    }
+    return res;
+}
+
+
 
 
 ubyte[][] allPermutations(ubyte[] s)
