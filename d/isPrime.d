@@ -40,9 +40,9 @@ import  std.range : chain, drop, enumerate, iota, only, padLeft, repeat, retro, 
 import  std.algorithm.iteration : each, filter, fold, joiner, map, sum;
 import  std.math : sqrt;
 import  std.array : array;
-    import std.range;
-    import std.stdio: write, writeln, writef, writefln;
-    import std.algorithm.comparison : equal;
+import std.range;
+import std.stdio: write, writeln, writef, writefln;
+import std.algorithm.comparison : equal;
 
 static auto primes()
 {
