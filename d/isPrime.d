@@ -36,13 +36,12 @@ ulong nextPrime(ulong n)
 
 // POWAAA
 
-import std.range : chain, drop, enumerate, iota, only, padLeft, repeat, retro, stride, take, zip;
-import std.algorithm.iteration : each, filter, fold, joiner, map, sum;
+import std.range;
+import std.algorithm;
 import std.math : sqrt;
 import std.array : array;
-import std.range;
+import std.container.rbtree;
 import std.stdio: write, writeln, writef, writefln;
-import std.algorithm.comparison : equal;
 
 static auto primes()
 {
