@@ -15,3 +15,18 @@ uint isqrt(uint n)
     }
     return y;
 }
+
+
+
+
+import std.math : pow, round, sqrt;
+
+bool isSquare(uint n)
+{
+    return n == (cast(double) n).sqrt.round.pow(2);
+}
+
+uint isqrt(uint n)
+{
+    return cast(uint) (sqrt(cast(double)n) + 1e-9);
+}
