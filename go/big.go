@@ -7,3 +7,13 @@
 
 n := new(big.Int)
 n.SetString("833465465474928364", 10)
+
+*big.Int
+
+big.NewInt(int64(n))
+
+
+big.NewInt(0)
+
+
+new(big.Int)
