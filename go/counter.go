@@ -4,3 +4,10 @@
   for _,r := range s {
     d[strings.ToLower(string(r))]++
   }
+
+
+func counter(s string) map[rune]int {
+  h := make(map[rune]int)
+  for _,r := range s { h[r]++ }
+  return h
+}
