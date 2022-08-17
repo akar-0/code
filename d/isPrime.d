@@ -74,3 +74,47 @@ static auto primes()
     auto P = assumeSorted([2u,3].chain(iota(1, n/3-c).filter!(x => L[x]).map!(i => (3*i+1)|1)).array);
     return P;
 }
+
+
+
+
+import std.range;
+import std.algorithm;
+import std.math : sqrt;
+import std.array : array;
+import std.container.rbtree;
+import std.stdio: write, writeln, writef, writefln;
+
+static SortedRange!(uint[], "a < b", SortedRangeOptions.assumeSorted) p;
+
+static auto f()
+{
+    if (p.length) return;
+    // limit
+    auto n = 10_000;
+    auto c = (n%6)>1 ? 1 : 0;
+    auto a = [n, n - 1, n + 4, n + 3, n + 2, n + 1];
+    n = a[n%6];
+    auto L = (true).repeat(n/3).array;
+    L[0] = false;
+    auto sq = cast(uint) sqrt(cast(double) n);
+    for (auto i = 0 ; i <= sq / 3 ; i++)
+    {
+        if (L[i])
+        {
+            auto j=(3*i+1)|1;
+            auto h=j*j;
+            for (auto e = h / 3 ; e < L.length ; e += 2 *j)
+            {
+                L[e] = false;
+            }
+            for (auto e = (h+4*j-2*j*(i%2))/3 ; e < L.length ; e += 2 * j)
+            {
+                L[e] = false;
+            }
+        }
+    }
+ //   writeln(L.length);
+ //   writeln(L);
+    p = assumeSorted([2u,3].chain(iota(1, n/3-c).filter!(x => L[x]).map!(i => (3*i+1)|1)).array);
+}
