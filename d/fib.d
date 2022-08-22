@@ -38,3 +38,22 @@ export BigInt fib(int n)
     }
     return y;
 }
+
+
+import std.bigint, std.math, std.functional, std.conv, std.array, std.algorithm;
+
+BigInt[] memo;
+
+void fib()
+{
+    if (memo.length) return;
+    BigInt a = 0, b = 1;
+    foreach(_; 0 .. 100_000)
+    {
+        memo ~= a;
+        auto c = a + b;
+        a = b;
+        b = c;
+    }
+    memo ~= a;
+}
