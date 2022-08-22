@@ -149,3 +149,13 @@ lazy_static! {
     };
     static ref PRIMES_SET: HashSet<u32> = PRIMES_VEC.iter().copied().collect();
 }
+
+
+
+fn next_prime(n: u64) -> u64 {
+    (n+1..).find(|x| is_prime(*x)).unwrap()
+}
+
+fn is_prime(x: u64) -> bool {
+    x == 2 || x == 3 || x > 2 && x%2 != 0 && (3..(x as f64).sqrt().round() as u64).step_by(2).all(|n| x % n != 0)
+}
