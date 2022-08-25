@@ -15,3 +15,6 @@ use std::collections::HashMap;
 
 
 s.matches(c).count()
+
+// itertools counts!!
+// https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.counts
