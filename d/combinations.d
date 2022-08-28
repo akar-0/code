@@ -45,3 +45,20 @@ ubyte[][] allPermutations(ubyte[] s)
     }
     return res;
 }
+
+
+uint[][] combinations(const uint[] arr, ulong n)
+{
+    if (!n) return [null];
+    if (n == 1) return arr.dup.map!(x => [x]).array;
+    uint[][] res;
+    foreach(t; arr.enumerate)
+    {
+        auto i = t.index, e = t.value;
+        foreach(x;combinations(arr[i + 1 .. $], n-1))
+        {
+            res ~= ([e] ~ x);
+        }
+    }
+    return res;
+}
