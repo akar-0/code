@@ -43,3 +43,4 @@ struct BST* insert(struct BST* root, int data, int i) {
     return root;
 }
 
+// https://www.codewars.com/kata/reviews/5fbf68526ed5a400018a81a7/groups/6506a2ce136b2400018f0a75
