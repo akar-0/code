@@ -100,3 +100,19 @@ cvtsd2si  ecx, xmm0    ; rounded to nearest integer (or whatever the current rou
 ```
 ## sort
 * [l](https://www.codewars.com/kumite/5d54274b90b243ee561ef499?sel=5d54274b90b243ee561ef499)
+
+## varia
+*[l](https://www.codewars.com/kata/reviews/6520e4ef0b34ca0001590845/groups/6520e4f00b34ca000159084b#652166f968d400004b3cbef7) ```
+    monadius 
+
+    (2 dan)
+    9 minutes ago
+    2 edits
+
+The best way to zero upper 32 bits of a 64-bit register is to perform a move operation with 32-bit registers:
+
+mov edi, edi
+mov eax, eax
+
+All operations automatically zero upper 32 bits of a 64-bit register if the destination is a 32-bit part of that register.
+```
